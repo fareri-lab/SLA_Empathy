@@ -1,0 +1,283 @@
+Analysis name: SLA_Madison																
+Column conditions: None																
+"Row conditions: Block, Procedure[Trial], Procedure[Block], SubTrial, Sex, Age, Procedure[SubTrial], Response.RESP, Response.RT, Running[SubTrial], GambleOutcome, GambleAmount, Amount1, Amount2, Certain"																
+Statistics: BFBlockInstructions.RTTime:Mean																
+Filters: None																
+Data file: SLA_Empathy_v1-156-1																
+File does not have data alterations.																
+Block	Procedure[Trial]	Procedure[Block]	SubTrial	Sex	Age	Procedure[SubTrial]	Response.RESP	Response.RT	Running[SubTrial]	GambleOutcome	GambleAmount	Amount1	Amount2	Certain	Stats	
+1	PracticeTrials	Instructions	1	female	20	PracticeMixed	NULL	NULL	List14	won	$5.00 	$5.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+1	PracticeTrials	Instructions	2	female	20	PracticeMixed	NULL	NULL	List14	lost	($2.00)	$4.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+1	PracticeTrials	Instructions	3	female	20	PracticeGain	NULL	NULL	List14	won	$7.00 	$7.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	N/A
+1	PracticeTrials	Instructions	4	female	20	PracticeGain	NULL	NULL	List14	lost	$0.00 	$8.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	1	female	20	LASelfGain	1	50	List4	won	$10.00 	$10.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	2	female	20	LASelfMixed	2	448	List4	lost	($15.75)	$9.00 	($15.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	3	female	20	LASelfMixed	2	885	List4	lost	($8.75)	$10.00 	($8.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	4	female	20	LASelfMixed	1	1171	List4	won	$8.00 	$8.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	5	female	20	LASelfMixed	2	665	List4	lost	($12.00)	$6.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	6	female	20	LASelfMixed	2	798	List4	lost	($18.75)	$10.00 	($18.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	7	female	20	LASelfMixed		0	List4	won	$5.00 	$5.00 	($8.13)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	8	female	20	LASelfGain	1	345	List4	lost	$0.00 	$12.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	9	female	20	LASelfMixed	1	1238	List4	won	$9.00 	$9.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	10	female	20	LASelfGain	2	1291	List4	lost	$0.00 	$22.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	11	female	20	LASelfMixed	2	898	List4	lost	($7.00)	$8.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	12	female	20	LASelfMixed	2	775	List4	won	$4.00 	$4.00 	($8.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	13	female	20	LASelfGain	1	677	List4	won	$25.00 	$25.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	14	female	20	LASelfMixed	2	1210	List4	lost	($3.75)	$2.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	15	female	20	LASelfMixed	2	632	List4	won	$2.00 	$2.00 	($1.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	16	female	20	LASelfMixed	2	565	List4	won	$6.00 	$6.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	17	female	20	LASelfGain	1	522	List4	won	$13.00 	$13.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	18	female	20	LASelfMixed	2	1656	List4	lost	($4.00)	$4.00 	($4.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	19	female	20	LASelfGain	1	607	List4	won	$7.00 	$7.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	20	female	20	LASelfGain	1	740	List4	won	$3.25 	$3.25 	$0.00 	$1.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	21	female	20	LASelfMixed		0	List4	won	$4.00 	$4.00 	($1.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	22	female	20	LASelfGain	1	383	List4	lost	$0.00 	$8.00 	$0.00 	$4.25 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	23	female	20	LASelfGain	1	460	List4	lost	$0.00 	$17.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	24	female	20	LASelfMixed	2	818	List4	won	$12.00 	$12.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	25	female	20	LASelfMixed	2	1360	List4	lost	($5.00)	$5.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	26	female	20	LASelfGain	1	501	List4	won	$4.00 	$4.00 	$0.00 	$2.25 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	27	female	20	LASelfMixed	2	755	List4	lost	($9.00)	$12.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	28	female	20	LASelfMixed	2	585	List4	won	$8.00 	$8.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	29	female	20	LASelfMixed	1	799	List4	lost	($4.38)	$5.00 	($4.38)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self1	SelfTask	30	female	20	LASelfMixed	2	331	List4	lost	($13.00)	$8.00 	($13.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	1	female	20	LASelfMixed	2	1112	List5	lost	($2.25)	$2.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	2	female	20	LASelfMixed	1	998	List5	won	$6.00 	$6.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	3	female	20	LASelfMixed	2	1306	List5	won	$2.00 	$2.00 	($3.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	4	female	20	LASelfGain	1	280	List5	lost	$0.00 	$22.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	5	female	20	LASelfMixed	2	573	List5	won	$9.00 	$9.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	6	female	20	LASelfGain	1	571	List5	won	$17.00 	$17.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	7	female	20	LASelfGain	1	1073	List5	won	$4.00 	$4.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	8	female	20	LASelfMixed	2	366	List5	lost	($2.00)	$4.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	9	female	20	LASelfGain	2	1436	List5	won	$11.00 	$11.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	10	female	20	LASelfGain	1	769	List5	lost	$0.00 	$7.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	11	female	20	LASelfMixed	2	831	List5	lost	($3.75)	$10.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	12	female	20	LASelfMixed	2	891	List5	won	$12.00 	$12.00 	($24.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	13	female	20	LASelfMixed	2	1017	List5	lost	($10.50)	$6.00 	($10.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	14	female	20	LASelfMixed	2	528	List5	lost	($9.38)	$5.00 	($9.38)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	15	female	20	LASelfMixed	2	422	List5	won	$8.00 	$8.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	16	female	20	LASelfMixed		0	List5	won	$5.00 	$5.00 	($3.13)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	17	female	20	LASelfGain	1	360	List5	lost	$0.00 	$30.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	18	female	20	LASelfMixed	2	878	List5	won	$4.00 	$4.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	19	female	20	LASelfMixed	2	852	List5	won	$10.00 	$10.00 	($13.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	20	female	20	LASelfMixed		0	List5	lost	($15.00)	$8.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	21	female	20	LASelfGain	1	559	List5	won	$24.00 	$24.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	22	female	20	LASelfMixed		0	List5	lost	($15.00)	$12.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	23	female	20	LASelfMixed	2	635	List5	lost	($18.00)	$9.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	24	female	20	LASelfGain	1	561	List5	won	$13.00 	$13.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	25	female	20	LASelfMixed	2	1030	List5	won	$2.00 	$2.00 	($0.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	26	female	20	LASelfMixed	2	627	List5	lost	($6.00)	$12.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	27	female	20	LASelfGain	1	577	List5	lost	$0.00 	$8.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	28	female	20	LASelfMixed		0	List5	won	$8.00 	$8.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	29	female	20	LASelfMixed	2	365	List5	lost	($5.00)	$4.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self2	SelfTask	30	female	20	LASelfMixed	2	361	List5	lost	($6.00)	$6.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	1	female	20	LASelfMixed	2	541	List6	won	$9.00 	$9.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	2	female	20	LASelfMixed		0	List6	won	$12.00 	$12.00 	($21.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	3	female	20	LASelfMixed		0	List6	won	$5.00 	$5.00 	($6.88)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	4	female	20	LASelfMixed	2	598	List6	lost	($3.00)	$12.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	5	female	20	LASelfGain	1	723	List6	won	$5.00 	$5.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	6	female	20	LASelfMixed	2	1409	List6	lost	($6.75)	$9.00 	($6.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	7	female	20	LASelfGain	1	639	List6	lost	$0.00 	$26.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	8	female	20	LASelfMixed	2	957	List6	won	$8.00 	$8.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	9	female	20	LASelfGain	1	569	List6	won	$19.00 	$19.00 	$0.00 	$8.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	10	female	20	LASelfGain	1	1391	List6	lost	$0.00 	$25.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	11	female	20	LASelfMixed	2	637	List6	lost	($1.88)	$5.00 	($1.88)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	12	female	20	LASelfMixed	2	1219	List6	lost	($2.75)	$2.00 	($2.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	13	female	20	LASelfMixed	2	743	List6	won	$2.00 	$2.00 	($1.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	14	female	20	LASelfMixed	2	373	List6	lost	($11.25)	$10.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	15	female	20	LASelfGain	2	1339	List6	lost	$0.00 	$5.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	16	female	20	LASelfMixed	2	545	List6	won	$9.00 	$9.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	17	female	20	LASelfMixed	2	303	List6	lost	($11.00)	$8.00 	($11.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	18	female	20	LASelfMixed	2	883	List6	won	$4.00 	$4.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	19	female	20	LASelfMixed	2	9	List6	won	$6.00 	$6.00 	($1.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	20	female	20	LASelfMixed	2	1168	List6	lost	($13.50)	$9.00 	($13.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	21	female	20	LASelfMixed	2	485	List6	lost	($5.63)	$5.00 	($5.63)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	22	female	20	LASelfMixed	2	850	List6	lost	($3.00)	$6.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	23	female	20	LASelfMixed	2	848	List6	won	$10.00 	$10.00 	($16.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	24	female	20	LASelfMixed	2	774	List6	won	$5.00 	$5.00 	($2.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	25	female	20	LASelfGain	1	732	List6	lost	$0.00 	$28.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	26	female	20	LASelfMixed	2	490	List6	won	$10.00 	$10.00 	($6.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	27	female	20	LASelfGain	1	438	List6	lost	$0.00 	$12.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	28	female	20	LASelfMixed	2	860	List6	lost	($12.00)	$12.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	29	female	20	LASelfMixed	2	434	List6	won	$4.00 	$4.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+2	Self3	SelfTask	30	female	20	LASelfMixed	2	1624	List6	won	$6.00 	$6.00 	($7.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+3	BF1	BFTask	1	female	20	LABFMixed	2	1604	List11	won	$8.00 	$8.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	2	female	20	LABFMixed	2	675	List11	lost	($3.75)	$2.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	3	female	20	LABFGain	1	656	List11	won	$12.00 	$12.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	4	female	20	LABFGain	2	1382	List11	lost	$0.00 	$22.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	5	female	20	LABFMixed	2	915	List11	lost	($4.38)	$5.00 	($4.38)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	6	female	20	LABFMixed	2	680	List11	lost	($18.75)	$10.00 	($18.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	7	female	20	LABFMixed	2	542	List11	won	$9.00 	$9.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	8	female	20	LABFMixed	2	716	List11	lost	($1.25)	$2.00 	($1.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	9	female	20	LABFMixed		0	List11	won	$4.00 	$4.00 	($1.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	10	female	20	LABFMixed	2	575	List11	lost	($13.00)	$8.00 	($13.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	11	female	20	LABFMixed	2	709	List11	won	$8.00 	$8.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	12	female	20	LABFMixed	2	874	List11	lost	($12.00)	$6.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	13	female	20	LABFMixed	2	744	List11	lost	($9.00)	$12.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	14	female	20	LABFMixed	2	485	List11	won	$6.00 	$6.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	15	female	20	LABFGain	1	603	List11	won	$3.25 	$3.25 	$0.00 	$1.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	16	female	20	LABFGain	1	1049	List11	won	$7.00 	$7.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	17	female	20	LABFMixed	2	871	List11	lost	($7.00)	$8.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	18	female	20	LABFGain	1	765	List11	won	$25.00 	$25.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	19	female	20	LABFGain	2	1146	List11	lost	$0.00 	$8.00 	$0.00 	$4.25 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	20	female	20	LABFMixed	2	295	List11	lost	($8.75)	$10.00 	($8.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	21	female	20	LABFMixed	2	1165	List11	won	$4.00 	$4.00 	($8.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	22	female	20	LABFGain	1	683	List11	lost	$0.00 	$17.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	23	female	20	LABFMixed	2	615	List11	won	$12.00 	$12.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	24	female	20	LABFGain	2	598	List11	won	$10.00 	$10.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	25	female	20	LABFGain	2	692	List11	lost	$0.00 	$13.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	26	female	20	LABFMixed	2	809	List11	lost	($15.75)	$9.00 	($15.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	27	female	20	LABFMixed	2	1087	List11	won	$5.00 	$5.00 	($8.13)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	28	female	20	LABFMixed	2	595	List11	won	$4.00 	$4.00 	($4.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	29	female	20	LABFGain	2	329	List11	won	$4.00 	$4.00 	$0.00 	$2.25 	Mean BFBlockInstructions.RTTime	1175281
+3	BF1	BFTask	30	female	20	LABFMixed		0	List11	lost	($5.00)	$5.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	1	female	20	LABFGain	1	698	List12	lost	$0.00 	$30.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	2	female	20	LABFMixed	2	432	List12	lost	($6.00)	$12.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	3	female	20	LABFMixed	2	1565	List12	won	$4.00 	$4.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	4	female	20	LABFGain	2	763	List12	lost	$0.00 	$17.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	5	female	20	LABFMixed	2	1137	List12	won	$2.00 	$2.00 	($3.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	6	female	20	LABFMixed	2	526	List12	lost	($6.00)	$6.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	7	female	20	LABFMixed	2	587	List12	won	$6.00 	$6.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	8	female	20	LABFMixed	2	1001	List12	lost	($2.00)	$4.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	9	female	20	LABFGain	2	1335	List12	won	$4.00 	$4.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	10	female	20	LABFMixed	2	1692	List12	won	$9.00 	$9.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	11	female	20	LABFMixed	2	337	List12	lost	($24.00)	$12.00 	($24.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	12	female	20	LABFGain	1	504	List12	won	$22.00 	$22.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	13	female	20	LABFMixed	2	694	List12	won	$4.00 	$4.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	14	female	20	LABFMixed	2	499	List12	won	$2.00 	$2.00 	($0.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	15	female	20	LABFMixed	2	408	List12	lost	($2.25)	$2.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	16	female	20	LABFMixed	2	438	List12	lost	($9.38)	$5.00 	($9.38)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	17	female	20	LABFMixed		0	List12	lost	($15.00)	$8.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	18	female	20	LABFMixed	2	345	List12	won	$8.00 	$8.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	19	female	20	LABFMixed	2	350	List12	won	$10.00 	$10.00 	($13.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	20	female	20	LABFGain	1	892	List12	lost	$0.00 	$8.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	21	female	20	LABFMixed		0	List12	won	$8.00 	$8.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	22	female	20	LABFGain	1	592	List12	won	$13.00 	$13.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	23	female	20	LABFGain	2	1733	List12	won	$24.00 	$24.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	24	female	20	LABFMixed	2	506	List12	lost	($18.00)	$9.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	25	female	20	LABFGain	2	568	List12	lost	$0.00 	$7.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	26	female	20	LABFMixed	2	686	List12	lost	($3.75)	$10.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	27	female	20	LABFMixed	2	412	List12	won	$5.00 	$5.00 	($3.13)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	28	female	20	LABFMixed	2	354	List12	lost	($15.00)	$12.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	29	female	20	LABFMixed	2	431	List12	lost	($10.50)	$6.00 	($10.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF2	BFTask	30	female	20	LABFGain	2	716	List12	won	$11.00 	$11.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	1	female	20	LABFMixed	2	912	List13	won	$9.00 	$9.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	2	female	20	LABFMixed	2	910	List13	won	$6.00 	$6.00 	($7.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	3	female	20	LABFMixed	2	1308	List13	lost	($21.00)	$12.00 	($21.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	4	female	20	LABFGain	2	761	List13	won	$19.00 	$19.00 	$0.00 	$8.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	5	female	20	LABFGain	2	886	List13	lost	$0.00 	$12.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	6	female	20	LABFMixed	2	852	List13	lost	($13.50)	$9.00 	($13.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	7	female	20	LABFMixed	2	1618	List13	won	$10.00 	$10.00 	($16.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	8	female	20	LABFMixed	2	719	List13	lost	($3.00)	$6.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	9	female	20	LABFMixed	2	493	List13	lost	($12.00)	$12.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	10	female	20	LABFMixed	2	723	List13	won	$5.00 	$5.00 	($6.88)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	11	female	20	LABFMixed	2	1312	List13	lost	($2.75)	$2.00 	($2.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	12	female	20	LABFMixed	2	574	List13	lost	($3.00)	$12.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	13	female	20	LABFMixed	2	602	List13	won	$5.00 	$5.00 	($2.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	14	female	20	LABFMixed	2	408	List13	lost	($5.63)	$5.00 	($5.63)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	15	female	20	LABFMixed	2	454	List13	lost	($3.00)	$4.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	16	female	20	LABFMixed	2	676	List13	won	$4.00 	$4.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	17	female	20	LABFGain	2	576	List13	won	$5.00 	$5.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	18	female	20	LABFMixed	2	590	List13	won	$9.00 	$9.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	19	female	20	LABFGain	1	435	List13	lost	$0.00 	$26.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	20	female	20	LABFMixed	2	665	List13	won	$6.00 	$6.00 	($1.50)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	21	female	20	LABFMixed	2	1198	List13	won	$10.00 	$10.00 	($6.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	22	female	20	LABFMixed	2	956	List13	lost	($6.75)	$9.00 	($6.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	23	female	20	LABFMixed		0	List13	won	$8.00 	$8.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	24	female	20	LABFMixed		0	List13	lost	($11.25)	$10.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	25	female	20	LABFGain	2	694	List13	won	$5.00 	$5.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	26	female	20	LABFMixed	2	1291	List13	won	$2.00 	$2.00 	($1.75)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	27	female	20	LABFGain	2	1649	List13	lost	$0.00 	$28.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	28	female	20	LABFMixed	2	767	List13	won	$8.00 	$8.00 	($11.00)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	29	female	20	LABFGain	2	357	List13	lost	$0.00 	$25.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	1175281
+3	BF3	BFTask	30	female	20	LABFMixed	2	355	List13	lost	($1.88)	$5.00 	($1.88)	$0.00 	Mean BFBlockInstructions.RTTime	1175281
+4	Other1	OtherTask	1	female	20	LAOtherMixed	2	359	List7	lost	($3.75)	$2.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	2	female	20	LAOtherGain	1	973	List7	won	$17.00 	$17.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	3	female	20	LAOtherMixed	2	723	List7	lost	($15.75)	$9.00 	($15.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	4	female	20	LAOtherMixed	2	264	List7	lost	($8.75)	$10.00 	($8.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	5	female	20	LAOtherGain	1	902	List7	won	$3.25 	$3.25 	$0.00 	$1.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	6	female	20	LAOtherMixed	2	923	List7	lost	($12.00)	$6.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	7	female	20	LAOtherMixed	2	537	List7	won	$6.00 	$6.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	8	female	20	LAOtherMixed	2	662	List7	won	$12.00 	$12.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	9	female	20	LAOtherMixed	2	763	List7	won	$9.00 	$9.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	10	female	20	LAOtherGain	2	306	List7	lost	$0.00 	$13.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	11	female	20	LAOtherGain		0	List7	lost	$0.00 	$22.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	12	female	20	LAOtherGain	1	693	List7	won	$7.00 	$7.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	13	female	20	LAOtherMixed	2	610	List7	won	$5.00 	$5.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	14	female	20	LAOtherMixed	2	1495	List7	lost	($9.00)	$12.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	15	female	20	LAOtherMixed	2	557	List7	won	$4.00 	$4.00 	($4.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	16	female	20	LAOtherGain	1	611	List7	lost	$0.00 	$8.00 	$0.00 	$4.25 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	17	female	20	LAOtherGain	2	617	List7	won	$10.00 	$10.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	18	female	20	LAOtherMixed	2	863	List7	lost	($13.00)	$8.00 	($13.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	19	female	20	LAOtherGain	1	989	List7	lost	$0.00 	$25.00 	$0.00 	$9.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	20	female	20	LAOtherMixed	2	1178	List7	won	$4.00 	$4.00 	($8.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	21	female	20	LAOtherMixed	2	656	List7	lost	($1.25)	$2.00 	($1.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	22	female	20	LAOtherMixed	2	469	List7	won	$4.00 	$4.00 	($1.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	23	female	20	LAOtherMixed	2	746	List7	won	$8.00 	$8.00 	($9.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	24	female	20	LAOtherMixed	2	632	List7	lost	($18.75)	$10.00 	($18.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	25	female	20	LAOtherGain	1	494	List7	lost	$0.00 	$12.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	26	female	20	LAOtherMixed	2	915	List7	won	$8.00 	$8.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	27	female	20	LAOtherMixed	2	448	List7	lost	($7.00)	$8.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	28	female	20	LAOtherGain	2	982	List7	won	$4.00 	$4.00 	$0.00 	$2.25 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	29	female	20	LAOtherMixed	2	308	List7	won	$5.00 	$5.00 	($8.13)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other1	OtherTask	30	female	20	LAOtherMixed	2	154	List7	lost	($4.38)	$5.00 	($4.38)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	1	female	20	LAOtherGain	2	465	List8	lost	$0.00 	$17.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	2	female	20	LAOtherMixed	2	614	List8	won	$5.00 	$5.00 	($3.13)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	3	female	20	LAOtherMixed	2	1132	List8	won	$9.00 	$9.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	4	female	20	LAOtherMixed	2	321	List8	lost	($9.38)	$5.00 	($9.38)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	5	female	20	LAOtherMixed	2	431	List8	lost	($18.00)	$9.00 	($18.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	6	female	20	LAOtherMixed	2	484	List8	won	$2.00 	$2.00 	($3.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	7	female	20	LAOtherGain	2	770	List8	lost	$0.00 	$7.00 	$0.00 	$4.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	8	female	20	LAOtherMixed	2	511	List8	lost	($3.75)	$10.00 	($3.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	9	female	20	LAOtherMixed	2	533	List8	won	$12.00 	$12.00 	($24.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	10	female	20	LAOtherMixed	2	786	List8	won	$4.00 	$4.00 	($7.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	11	female	20	LAOtherGain	2	903	List8	lost	$0.00 	$11.00 	$0.00 	$6.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	12	female	20	LAOtherMixed	2	485	List8	lost	($13.75)	$10.00 	($13.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	13	female	20	LAOtherMixed	2	675	List8	won	$2.00 	$2.00 	($0.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	14	female	20	LAOtherMixed	2	465	List8	won	$8.00 	$8.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	15	female	20	LAOtherMixed	2	437	List8	lost	($15.00)	$8.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	16	female	20	LAOtherMixed	2	371	List8	lost	($5.00)	$4.00 	($5.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	17	female	20	LAOtherGain		0	List8	won	$13.00 	$13.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	18	female	20	LAOtherMixed	2	1671	List8	lost	($2.25)	$2.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	19	female	20	LAOtherMixed	2	893	List8	won	$8.00 	$8.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	20	female	20	LAOtherGain	2	602	List8	won	$4.00 	$4.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	21	female	20	LAOtherGain	2	576	List8	won	$24.00 	$24.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	22	female	20	LAOtherMixed	2	534	List8	lost	($15.00)	$12.00 	($15.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	23	female	20	LAOtherGain	1	596	List8	won	$22.00 	$22.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	24	female	20	LAOtherGain	1	488	List8	lost	$0.00 	$30.00 	$0.00 	$12.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	25	female	20	LAOtherMixed	2	1158	List8	lost	($2.00)	$4.00 	($2.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	26	female	20	LAOtherMixed	2	1220	List8	won	$6.00 	$6.00 	($4.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	27	female	20	LAOtherMixed	2	370	List8	lost	($6.00)	$6.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	28	female	20	LAOtherMixed		0	List8	won	$6.00 	$6.00 	($10.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	29	female	20	LAOtherGain	1	685	List8	lost	$0.00 	$8.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other2	OtherTask	30	female	20	LAOtherMixed		0	List8	won	$12.00 	$12.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	1	female	20	LAOtherMixed	2	846	List9	won	$12.00 	$12.00 	($21.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	2	female	20	LAOtherGain	2	1556	List9	lost	$0.00 	$28.00 	$0.00 	$13.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	3	female	20	LAOtherMixed	2	945	List9	won	$6.00 	$6.00 	($1.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	4	female	20	LAOtherMixed	2	743	List9	lost	($11.00)	$8.00 	($11.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	5	female	20	LAOtherMixed	2	573	List9	lost	($3.00)	$6.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	6	female	20	LAOtherGain	2	923	List9	won	$25.00 	$25.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	7	female	20	LAOtherMixed	2	1505	List9	lost	($11.25)	$10.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	8	female	20	LAOtherMixed	2	622	List9	lost	($1.88)	$5.00 	($1.88)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	9	female	20	LAOtherMixed	2	620	List9	won	$5.00 	$5.00 	($2.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	10	female	20	LAOtherMixed	2	937	List9	lost	($13.50)	$9.00 	($13.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	11	female	20	LAOtherGain	1	687	List9	won	$19.00 	$19.00 	$0.00 	$8.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	12	female	20	LAOtherMixed	2	764	List9	won	$9.00 	$9.00 	($2.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	13	female	20	LAOtherMixed	2	297	List9	lost	($2.75)	$2.00 	($2.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	14	female	20	LAOtherMixed	2	672	List9	won	$10.00 	$10.00 	($6.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	15	female	20	LAOtherMixed	2	1389	List9	won	$4.00 	$4.00 	($6.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	16	female	20	LAOtherMixed	2	1427	List9	lost	($3.00)	$12.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	17	female	20	LAOtherMixed	2	799	List9	won	$10.00 	$10.00 	($16.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	18	female	20	LAOtherGain	2	93	List9	lost	$0.00 	$12.00 	$0.00 	$5.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	19	female	20	LAOtherMixed	2	618	List9	lost	($11.25)	$9.00 	($11.25)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	20	female	20	LAOtherMixed	2	681	List9	won	$4.00 	$4.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	21	female	20	LAOtherMixed	2	701	List9	won	$5.00 	$5.00 	($6.88)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	22	female	20	LAOtherMixed	2	1691	List9	lost	($6.75)	$9.00 	($6.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	23	female	20	LAOtherMixed	2	681	List9	lost	($12.00)	$12.00 	($12.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	24	female	20	LAOtherMixed		0	List9	won	$2.00 	$2.00 	($1.75)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	25	female	20	LAOtherGain	2	685	List9	lost	$0.00 	$5.00 	$0.00 	$3.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	26	female	20	LAOtherGain	2	770	List9	won	$5.00 	$5.00 	$0.00 	$2.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	27	female	20	LAOtherGain	1	519	List9	lost	$0.00 	$26.00 	$0.00 	$10.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	28	female	20	LAOtherMixed	2	350	List9	lost	($5.63)	$5.00 	($5.63)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	29	female	20	LAOtherMixed	2	795	List9	won	$6.00 	$6.00 	($7.50)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+4	Other3	OtherTask	30	female	20	LAOtherMixed		0	List9	won	$8.00 	$8.00 	($3.00)	$0.00 	Mean BFBlockInstructions.RTTime	N/A
+5	NULL	Ratings	NULL	female	20	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Mean BFBlockInstructions.RTTime	N/A

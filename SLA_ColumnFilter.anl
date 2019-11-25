@@ -1,0 +1,45 @@
+SLA_Madison
+{Begin Comments
+
+}
+{Begin Filters
+}
+{Begin Rows
+Block	1
+Procedure[Trial]	1
+Procedure[Block]	1
+SubTrial	1
+Sex	1
+Age	1
+Procedure[SubTrial]	1
+Response.RESP	1
+Response.RT	1
+Running[SubTrial]	1
+GambleOutcome	1
+GambleAmount	1
+Amount1	1
+Amount2	1
+Certain	1
+}
+{Begin Cols
+}
+{Begin Data
+BothBlockInstructions.RT	4
+}
+{Begin Options
+0
+0
+1
+0
+2
+2
+1
+1
+1
+0
+1
+1
+
+1
+
+}
