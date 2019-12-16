@@ -1,0 +1,16 @@
+Key for social loss aversion data
+
+Subject: unique sub ids
+MiniBlock: values from 1-3; each version of task was 90 trials (Self, other, both), split into 3 mini-blocks of 30 trials each
+Partner: 0 = self, 1 = other, 2 = both (shared)
+SubTrial: Trial per miniblock (1-30)
+Sex: 0 = male, 1 = female
+ChoiceType: 0 = Gain Trial, 1 = Mixed Gamble Trial
+Response: 0 = Certain, 1 = Gamble
+RealOutcome: 0 = Loss, 1 = Win, 3 = Certain
+MonetaryOutcome = actual experienced monetary outcome of choice
+Amount1: potential gain
+Amount2: potential loss
+Certain: certain amount
+Condition: 0 = Stranger, 1 = Friend
+
