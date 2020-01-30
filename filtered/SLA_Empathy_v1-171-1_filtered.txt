@@ -1,0 +1,283 @@
+Analysis name: SLAEmpathy
+Column conditions: None
+Row conditions: Block, Procedure[Trial], Procedure[Block], SubTrial, Sex, Age, Procedure[SubTrial], Response.RESP, Response.RT, Running[SubTrial], GambleOutcome, GambleAmount, Amount1, Amount2, Certain
+Statistics: Response.RT:Mean
+Filters: None
+Data file: SLA_Empathy_v1-171-1
+File does not have data alterations.
+Block	Procedure[Trial]	Procedure[Block]	SubTrial	Sex	Age	Procedure[SubTrial]	Response.RESP	Response.RT	Running[SubTrial]	GambleOutcome	GambleAmount	Amount1	Amount2	Certain	Stats	
+1	PracticeTrials	Instructions	1	female	19	PracticeMixed	NULL	NULL	List14	won	$5.00	$5.00	-$3.00	$0.00	Mean Response.RT	N/A
+1	PracticeTrials	Instructions	2	female	19	PracticeMixed	NULL	NULL	List14	lost	-$2.00	$4.00	-$2.00	$0.00	Mean Response.RT	N/A
+1	PracticeTrials	Instructions	3	female	19	PracticeGain	NULL	NULL	List14	won	$7.00	$7.00	$0.00	$2.00	Mean Response.RT	N/A
+1	PracticeTrials	Instructions	4	female	19	PracticeGain	NULL	NULL	List14	lost	$0.00	$8.00	$0.00	$4.00	Mean Response.RT	N/A
+2	Self1	SelfTask	1	female	19	LASelfGain	2	405	List4	won	$10.00	$10.00	$0.00	$6.00	Mean Response.RT	405.00
+2	Self1	SelfTask	2	female	19	LASelfMixed	2	1338	List4	lost	-$15.75	$9.00	-$15.75	$0.00	Mean Response.RT	1338.00
+2	Self1	SelfTask	3	female	19	LASelfMixed	1	200	List4	lost	-$8.75	$10.00	-$8.75	$0.00	Mean Response.RT	200.00
+2	Self1	SelfTask	4	female	19	LASelfMixed		0	List4	won	$8.00	$8.00	-$2.00	$0.00	Mean Response.RT	0.00
+2	Self1	SelfTask	5	female	19	LASelfMixed	1	1268	List4	lost	-$12.00	$6.00	-$12.00	$0.00	Mean Response.RT	1268.00
+2	Self1	SelfTask	6	female	19	LASelfMixed		0	List4	lost	-$18.75	$10.00	-$18.75	$0.00	Mean Response.RT	0.00
+2	Self1	SelfTask	7	female	19	LASelfMixed	1	494	List4	won	$5.00	$5.00	-$8.13	$0.00	Mean Response.RT	494.00
+2	Self1	SelfTask	8	female	19	LASelfGain	1	1836	List4	lost	$0.00	$12.00	$0.00	$4.00	Mean Response.RT	1836.00
+2	Self1	SelfTask	9	female	19	LASelfMixed	1	289	List4	won	$9.00	$9.00	-$9.00	$0.00	Mean Response.RT	289.00
+2	Self1	SelfTask	10	female	19	LASelfGain	1	495	List4	lost	$0.00	$22.00	$0.00	$13.00	Mean Response.RT	495.00
+2	Self1	SelfTask	11	female	19	LASelfMixed		0	List4	lost	-$7.00	$8.00	-$7.00	$0.00	Mean Response.RT	0.00
+2	Self1	SelfTask	12	female	19	LASelfMixed		0	List4	won	$4.00	$4.00	-$8.00	$0.00	Mean Response.RT	0.00
+2	Self1	SelfTask	13	female	19	LASelfGain		0	List4	won	$25.00	$25.00	$0.00	$9.00	Mean Response.RT	0.00
+2	Self1	SelfTask	14	female	19	LASelfMixed	2	1821	List4	lost	-$3.75	$2.00	-$3.75	$0.00	Mean Response.RT	1821.00
+2	Self1	SelfTask	15	female	19	LASelfMixed		0	List4	won	$2.00	$2.00	-$1.25	$0.00	Mean Response.RT	0.00
+2	Self1	SelfTask	16	female	19	LASelfMixed	2	1793	List4	won	$6.00	$6.00	-$9.00	$0.00	Mean Response.RT	1793.00
+2	Self1	SelfTask	17	female	19	LASelfGain	1	462	List4	won	$13.00	$13.00	$0.00	$6.00	Mean Response.RT	462.00
+2	Self1	SelfTask	18	female	19	LASelfMixed	2	1331	List4	lost	-$4.00	$4.00	-$4.00	$0.00	Mean Response.RT	1331.00
+2	Self1	SelfTask	19	female	19	LASelfGain	1	346	List4	won	$7.00	$7.00	$0.00	$3.00	Mean Response.RT	346.00
+2	Self1	SelfTask	20	female	19	LASelfGain	1	808	List4	won	$3.25	$3.25	$0.00	$1.00	Mean Response.RT	808.00
+2	Self1	SelfTask	21	female	19	LASelfMixed	1	1780	List4	won	$4.00	$4.00	-$1.00	$0.00	Mean Response.RT	1780.00
+2	Self1	SelfTask	22	female	19	LASelfGain	1	394	List4	lost	$0.00	$8.00	$0.00	$4.25	Mean Response.RT	394.00
+2	Self1	SelfTask	23	female	19	LASelfGain	1	696	List4	lost	$0.00	$17.00	$0.00	$9.00	Mean Response.RT	696.00
+2	Self1	SelfTask	24	female	19	LASelfMixed	2	854	List4	won	$12.00	$12.00	-$18.00	$0.00	Mean Response.RT	854.00
+2	Self1	SelfTask	25	female	19	LASelfMixed	2	99	List4	lost	-$5.00	$5.00	-$5.00	$0.00	Mean Response.RT	99.00
+2	Self1	SelfTask	26	female	19	LASelfGain	1	681	List4	won	$4.00	$4.00	$0.00	$2.25	Mean Response.RT	681.00
+2	Self1	SelfTask	27	female	19	LASelfMixed	2	1559	List4	lost	-$9.00	$12.00	-$9.00	$0.00	Mean Response.RT	1559.00
+2	Self1	SelfTask	28	female	19	LASelfMixed	2	1140	List4	won	$8.00	$8.00	-$9.00	$0.00	Mean Response.RT	1140.00
+2	Self1	SelfTask	29	female	19	LASelfMixed	1	1010	List4	lost	-$4.38	$5.00	-$4.38	$0.00	Mean Response.RT	1010.00
+2	Self1	SelfTask	30	female	19	LASelfMixed		0	List4	lost	-$13.00	$8.00	-$13.00	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	1	female	19	LASelfMixed	2	183	List5	lost	-$2.25	$2.00	-$2.25	$0.00	Mean Response.RT	183.00
+2	Self2	SelfTask	2	female	19	LASelfMixed	2	1061	List5	won	$6.00	$6.00	-$4.50	$0.00	Mean Response.RT	1061.00
+2	Self2	SelfTask	3	female	19	LASelfMixed	1	754	List5	won	$2.00	$2.00	-$3.25	$0.00	Mean Response.RT	754.00
+2	Self2	SelfTask	4	female	19	LASelfGain	1	519	List5	lost	$0.00	$22.00	$0.00	$10.00	Mean Response.RT	519.00
+2	Self2	SelfTask	5	female	19	LASelfMixed	1	1237	List5	won	$9.00	$9.00	-$4.50	$0.00	Mean Response.RT	1237.00
+2	Self2	SelfTask	6	female	19	LASelfGain	1	691	List5	won	$17.00	$17.00	$0.00	$10.00	Mean Response.RT	691.00
+2	Self2	SelfTask	7	female	19	LASelfGain	2	840	List5	won	$4.00	$4.00	$0.00	$2.00	Mean Response.RT	840.00
+2	Self2	SelfTask	8	female	19	LASelfMixed	1	645	List5	lost	-$2.00	$4.00	-$2.00	$0.00	Mean Response.RT	645.00
+2	Self2	SelfTask	9	female	19	LASelfGain	2	1851	List5	won	$11.00	$11.00	$0.00	$6.00	Mean Response.RT	1851.00
+2	Self2	SelfTask	10	female	19	LASelfGain		0	List5	lost	$0.00	$7.00	$0.00	$4.00	Mean Response.RT	0.00
+2	Self2	SelfTask	11	female	19	LASelfMixed	1	149	List5	lost	-$3.75	$10.00	-$3.75	$0.00	Mean Response.RT	149.00
+2	Self2	SelfTask	12	female	19	LASelfMixed	2	395	List5	won	$12.00	$12.00	-$24.00	$0.00	Mean Response.RT	395.00
+2	Self2	SelfTask	13	female	19	LASelfMixed	1	777	List5	lost	-$10.50	$6.00	-$10.50	$0.00	Mean Response.RT	777.00
+2	Self2	SelfTask	14	female	19	LASelfMixed	2	551	List5	lost	-$9.38	$5.00	-$9.38	$0.00	Mean Response.RT	551.00
+2	Self2	SelfTask	15	female	19	LASelfMixed	1	277	List5	won	$8.00	$8.00	-$5.00	$0.00	Mean Response.RT	277.00
+2	Self2	SelfTask	16	female	19	LASelfMixed	1	594	List5	won	$5.00	$5.00	-$3.13	$0.00	Mean Response.RT	594.00
+2	Self2	SelfTask	17	female	19	LASelfGain	2	591	List5	lost	$0.00	$30.00	$0.00	$12.00	Mean Response.RT	591.00
+2	Self2	SelfTask	18	female	19	LASelfMixed	2	909	List5	won	$4.00	$4.00	-$7.00	$0.00	Mean Response.RT	909.00
+2	Self2	SelfTask	19	female	19	LASelfMixed		0	List5	won	$10.00	$10.00	-$13.75	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	20	female	19	LASelfMixed		0	List5	lost	-$15.00	$8.00	-$15.00	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	21	female	19	LASelfGain	1	1046	List5	won	$24.00	$24.00	$0.00	$12.00	Mean Response.RT	1046.00
+2	Self2	SelfTask	22	female	19	LASelfMixed	2	915	List5	lost	-$15.00	$12.00	-$15.00	$0.00	Mean Response.RT	915.00
+2	Self2	SelfTask	23	female	19	LASelfMixed		0	List5	lost	-$18.00	$9.00	-$18.00	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	24	female	19	LASelfGain		0	List5	won	$13.00	$13.00	$0.00	$5.00	Mean Response.RT	0.00
+2	Self2	SelfTask	25	female	19	LASelfMixed	2	196	List5	won	$2.00	$2.00	-$0.75	$0.00	Mean Response.RT	196.00
+2	Self2	SelfTask	26	female	19	LASelfMixed	2	825	List5	lost	-$6.00	$12.00	-$6.00	$0.00	Mean Response.RT	825.00
+2	Self2	SelfTask	27	female	19	LASelfGain	1	344	List5	lost	$0.00	$8.00	$0.00	$3.00	Mean Response.RT	344.00
+2	Self2	SelfTask	28	female	19	LASelfMixed		0	List5	won	$8.00	$8.00	-$6.00	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	29	female	19	LASelfMixed		0	List5	lost	-$5.00	$4.00	-$5.00	$0.00	Mean Response.RT	0.00
+2	Self2	SelfTask	30	female	19	LASelfMixed		0	List5	lost	-$6.00	$6.00	-$6.00	$0.00	Mean Response.RT	0.00
+2	Self3	SelfTask	1	female	19	LASelfMixed	2	439	List6	won	$9.00	$9.00	-$11.25	$0.00	Mean Response.RT	439.00
+2	Self3	SelfTask	2	female	19	LASelfMixed		0	List6	won	$12.00	$12.00	-$21.00	$0.00	Mean Response.RT	0.00
+2	Self3	SelfTask	3	female	19	LASelfMixed	2	882	List6	won	$5.00	$5.00	-$6.88	$0.00	Mean Response.RT	882.00
+2	Self3	SelfTask	4	female	19	LASelfMixed	1	696	List6	lost	-$3.00	$12.00	-$3.00	$0.00	Mean Response.RT	696.00
+2	Self3	SelfTask	5	female	19	LASelfGain	1	605	List6	won	$5.00	$5.00	$0.00	$2.00	Mean Response.RT	605.00
+2	Self3	SelfTask	6	female	19	LASelfMixed	2	907	List6	lost	-$6.75	$9.00	-$6.75	$0.00	Mean Response.RT	907.00
+2	Self3	SelfTask	7	female	19	LASelfGain	1	474	List6	lost	$0.00	$26.00	$0.00	$10.00	Mean Response.RT	474.00
+2	Self3	SelfTask	8	female	19	LASelfMixed	1	22	List6	won	$8.00	$8.00	-$3.00	$0.00	Mean Response.RT	22.00
+2	Self3	SelfTask	9	female	19	LASelfGain	1	827	List6	won	$19.00	$19.00	$0.00	$8.00	Mean Response.RT	827.00
+2	Self3	SelfTask	10	female	19	LASelfGain	1	305	List6	lost	$0.00	$25.00	$0.00	$10.00	Mean Response.RT	305.00
+2	Self3	SelfTask	11	female	19	LASelfMixed	1	478	List6	lost	-$1.88	$5.00	-$1.88	$0.00	Mean Response.RT	478.00
+2	Self3	SelfTask	12	female	19	LASelfMixed		0	List6	lost	-$2.75	$2.00	-$2.75	$0.00	Mean Response.RT	0.00
+2	Self3	SelfTask	13	female	19	LASelfMixed	2	522	List6	won	$2.00	$2.00	-$1.75	$0.00	Mean Response.RT	522.00
+2	Self3	SelfTask	14	female	19	LASelfMixed	2	583	List6	lost	-$11.25	$10.00	-$11.25	$0.00	Mean Response.RT	583.00
+2	Self3	SelfTask	15	female	19	LASelfGain	1	1236	List6	lost	$0.00	$5.00	$0.00	$3.00	Mean Response.RT	1236.00
+2	Self3	SelfTask	16	female	19	LASelfMixed	1	826	List6	won	$9.00	$9.00	-$2.25	$0.00	Mean Response.RT	826.00
+2	Self3	SelfTask	17	female	19	LASelfMixed	2	104	List6	lost	-$11.00	$8.00	-$11.00	$0.00	Mean Response.RT	104.00
+2	Self3	SelfTask	18	female	19	LASelfMixed	1	1501	List6	won	$4.00	$4.00	-$3.00	$0.00	Mean Response.RT	1501.00
+2	Self3	SelfTask	19	female	19	LASelfMixed	1	579	List6	won	$6.00	$6.00	-$1.50	$0.00	Mean Response.RT	579.00
+2	Self3	SelfTask	20	female	19	LASelfMixed	2	634	List6	lost	-$13.50	$9.00	-$13.50	$0.00	Mean Response.RT	634.00
+2	Self3	SelfTask	21	female	19	LASelfMixed	2	630	List6	lost	-$5.63	$5.00	-$5.63	$0.00	Mean Response.RT	630.00
+2	Self3	SelfTask	22	female	19	LASelfMixed	1	404	List6	lost	-$3.00	$6.00	-$3.00	$0.00	Mean Response.RT	404.00
+2	Self3	SelfTask	23	female	19	LASelfMixed	2	689	List6	won	$10.00	$10.00	-$16.25	$0.00	Mean Response.RT	689.00
+2	Self3	SelfTask	24	female	19	LASelfMixed	1	575	List6	won	$5.00	$5.00	-$2.50	$0.00	Mean Response.RT	575.00
+2	Self3	SelfTask	25	female	19	LASelfGain	2	972	List6	lost	$0.00	$28.00	$0.00	$13.00	Mean Response.RT	972.00
+2	Self3	SelfTask	26	female	19	LASelfMixed	1	1938	List6	won	$10.00	$10.00	-$6.25	$0.00	Mean Response.RT	1938.00
+2	Self3	SelfTask	27	female	19	LASelfGain	2	1864	List6	lost	$0.00	$12.00	$0.00	$5.00	Mean Response.RT	1864.00
+2	Self3	SelfTask	28	female	19	LASelfMixed	2	773	List6	lost	-$12.00	$12.00	-$12.00	$0.00	Mean Response.RT	773.00
+2	Self3	SelfTask	29	female	19	LASelfMixed	2	1899	List6	won	$4.00	$4.00	-$6.00	$0.00	Mean Response.RT	1899.00
+2	Self3	SelfTask	30	female	19	LASelfMixed		0	List6	won	$6.00	$6.00	-$7.50	$0.00	Mean Response.RT	0.00
+3	BF1	BFTask	1	female	19	LABFMixed		0	List11	won	$8.00	$8.00	-$9.00	$0.00	Mean Response.RT	0.00
+3	BF1	BFTask	2	female	19	LABFMixed	2	360	List11	lost	-$3.75	$2.00	-$3.75	$0.00	Mean Response.RT	360.00
+3	BF1	BFTask	3	female	19	LABFGain	2	525	List11	won	$12.00	$12.00	$0.00	$4.00	Mean Response.RT	525.00
+3	BF1	BFTask	4	female	19	LABFGain	2	650	List11	lost	$0.00	$22.00	$0.00	$13.00	Mean Response.RT	650.00
+3	BF1	BFTask	5	female	19	LABFMixed	2	1183	List11	lost	-$4.38	$5.00	-$4.38	$0.00	Mean Response.RT	1183.00
+3	BF1	BFTask	6	female	19	LABFMixed	2	317	List11	lost	-$18.75	$10.00	-$18.75	$0.00	Mean Response.RT	317.00
+3	BF1	BFTask	7	female	19	LABFMixed	2	851	List11	won	$9.00	$9.00	-$9.00	$0.00	Mean Response.RT	851.00
+3	BF1	BFTask	8	female	19	LABFMixed	1	641	List11	lost	-$1.25	$2.00	-$1.25	$0.00	Mean Response.RT	641.00
+3	BF1	BFTask	9	female	19	LABFMixed	1	574	List11	won	$4.00	$4.00	-$1.00	$0.00	Mean Response.RT	574.00
+3	BF1	BFTask	10	female	19	LABFMixed	2	659	List11	lost	-$13.00	$8.00	-$13.00	$0.00	Mean Response.RT	659.00
+3	BF1	BFTask	11	female	19	LABFMixed	1	665	List11	won	$8.00	$8.00	-$2.00	$0.00	Mean Response.RT	665.00
+3	BF1	BFTask	12	female	19	LABFMixed	2	7	List11	lost	-$12.00	$6.00	-$12.00	$0.00	Mean Response.RT	7.00
+3	BF1	BFTask	13	female	19	LABFMixed	2	381	List11	lost	-$9.00	$12.00	-$9.00	$0.00	Mean Response.RT	381.00
+3	BF1	BFTask	14	female	19	LABFMixed	2	307	List11	won	$6.00	$6.00	-$9.00	$0.00	Mean Response.RT	307.00
+3	BF1	BFTask	15	female	19	LABFGain	1	993	List11	won	$3.25	$3.25	$0.00	$1.00	Mean Response.RT	993.00
+3	BF1	BFTask	16	female	19	LABFGain		0	List11	won	$7.00	$7.00	$0.00	$3.00	Mean Response.RT	0.00
+3	BF1	BFTask	17	female	19	LABFMixed	2	995	List11	lost	-$7.00	$8.00	-$7.00	$0.00	Mean Response.RT	995.00
+3	BF1	BFTask	18	female	19	LABFGain	2	321	List11	won	$25.00	$25.00	$0.00	$9.00	Mean Response.RT	321.00
+3	BF1	BFTask	19	female	19	LABFGain	1	1055	List11	lost	$0.00	$8.00	$0.00	$4.25	Mean Response.RT	1055.00
+3	BF1	BFTask	20	female	19	LABFMixed	2	12	List11	lost	-$8.75	$10.00	-$8.75	$0.00	Mean Response.RT	12.00
+3	BF1	BFTask	21	female	19	LABFMixed	2	554	List11	won	$4.00	$4.00	-$8.00	$0.00	Mean Response.RT	554.00
+3	BF1	BFTask	22	female	19	LABFGain	2	1088	List11	lost	$0.00	$17.00	$0.00	$9.00	Mean Response.RT	1088.00
+3	BF1	BFTask	23	female	19	LABFMixed	2	1452	List11	won	$12.00	$12.00	-$18.00	$0.00	Mean Response.RT	1452.00
+3	BF1	BFTask	24	female	19	LABFGain	1	898	List11	won	$10.00	$10.00	$0.00	$6.00	Mean Response.RT	898.00
+3	BF1	BFTask	25	female	19	LABFGain	1	1504	List11	lost	$0.00	$13.00	$0.00	$6.00	Mean Response.RT	1504.00
+3	BF1	BFTask	26	female	19	LABFMixed	2	1701	List11	lost	-$15.75	$9.00	-$15.75	$0.00	Mean Response.RT	1701.00
+3	BF1	BFTask	27	female	19	LABFMixed		0	List11	won	$5.00	$5.00	-$8.13	$0.00	Mean Response.RT	0.00
+3	BF1	BFTask	28	female	19	LABFMixed	2	624	List11	won	$4.00	$4.00	-$4.00	$0.00	Mean Response.RT	624.00
+3	BF1	BFTask	29	female	19	LABFGain	2	1159	List11	won	$4.00	$4.00	$0.00	$2.25	Mean Response.RT	1159.00
+3	BF1	BFTask	30	female	19	LABFMixed	2	1507	List11	lost	-$5.00	$5.00	-$5.00	$0.00	Mean Response.RT	1507.00
+3	BF2	BFTask	1	female	19	LABFGain	2	286	List12	lost	$0.00	$30.00	$0.00	$12.00	Mean Response.RT	286.00
+3	BF2	BFTask	2	female	19	LABFMixed	2	20	List12	lost	-$6.00	$12.00	-$6.00	$0.00	Mean Response.RT	20.00
+3	BF2	BFTask	3	female	19	LABFMixed	2	618	List12	won	$4.00	$4.00	-$5.00	$0.00	Mean Response.RT	618.00
+3	BF2	BFTask	4	female	19	LABFGain	2	928	List12	lost	$0.00	$17.00	$0.00	$10.00	Mean Response.RT	928.00
+3	BF2	BFTask	5	female	19	LABFMixed	2	149	List12	won	$2.00	$2.00	-$3.25	$0.00	Mean Response.RT	149.00
+3	BF2	BFTask	6	female	19	LABFMixed	2	483	List12	lost	-$6.00	$6.00	-$6.00	$0.00	Mean Response.RT	483.00
+3	BF2	BFTask	7	female	19	LABFMixed	2	1312	List12	won	$6.00	$6.00	-$4.50	$0.00	Mean Response.RT	1312.00
+3	BF2	BFTask	8	female	19	LABFMixed	2	1069	List12	lost	-$2.00	$4.00	-$2.00	$0.00	Mean Response.RT	1069.00
+3	BF2	BFTask	9	female	19	LABFGain	1	1243	List12	won	$4.00	$4.00	$0.00	$2.00	Mean Response.RT	1243.00
+3	BF2	BFTask	10	female	19	LABFMixed	2	57	List12	won	$9.00	$9.00	-$4.50	$0.00	Mean Response.RT	57.00
+3	BF2	BFTask	11	female	19	LABFMixed	2	374	List12	lost	-$24.00	$12.00	-$24.00	$0.00	Mean Response.RT	374.00
+3	BF2	BFTask	12	female	19	LABFGain	1	516	List12	won	$22.00	$22.00	$0.00	$10.00	Mean Response.RT	516.00
+3	BF2	BFTask	13	female	19	LABFMixed	2	1049	List12	won	$4.00	$4.00	-$7.00	$0.00	Mean Response.RT	1049.00
+3	BF2	BFTask	14	female	19	LABFMixed	1	1206	List12	won	$2.00	$2.00	-$0.75	$0.00	Mean Response.RT	1206.00
+3	BF2	BFTask	15	female	19	LABFMixed	2	588	List12	lost	-$2.25	$2.00	-$2.25	$0.00	Mean Response.RT	588.00
+3	BF2	BFTask	16	female	19	LABFMixed	2	90	List12	lost	-$9.38	$5.00	-$9.38	$0.00	Mean Response.RT	90.00
+3	BF2	BFTask	17	female	19	LABFMixed	2	680	List12	lost	-$15.00	$8.00	-$15.00	$0.00	Mean Response.RT	680.00
+3	BF2	BFTask	18	female	19	LABFMixed	2	1589	List12	won	$8.00	$8.00	-$5.00	$0.00	Mean Response.RT	1589.00
+3	BF2	BFTask	19	female	19	LABFMixed	2	1083	List12	won	$10.00	$10.00	-$13.75	$0.00	Mean Response.RT	1083.00
+3	BF2	BFTask	20	female	19	LABFGain	1	1016	List12	lost	$0.00	$8.00	$0.00	$3.00	Mean Response.RT	1016.00
+3	BF2	BFTask	21	female	19	LABFMixed	2	918	List12	won	$8.00	$8.00	-$6.00	$0.00	Mean Response.RT	918.00
+3	BF2	BFTask	22	female	19	LABFGain	1	995	List12	won	$13.00	$13.00	$0.00	$5.00	Mean Response.RT	995.00
+3	BF2	BFTask	23	female	19	LABFGain		0	List12	won	$24.00	$24.00	$0.00	$12.00	Mean Response.RT	0.00
+3	BF2	BFTask	24	female	19	LABFMixed	2	1375	List12	lost	-$18.00	$9.00	-$18.00	$0.00	Mean Response.RT	1375.00
+3	BF2	BFTask	25	female	19	LABFGain	2	501	List12	lost	$0.00	$7.00	$0.00	$4.00	Mean Response.RT	501.00
+3	BF2	BFTask	26	female	19	LABFMixed	1	1225	List12	lost	-$3.75	$10.00	-$3.75	$0.00	Mean Response.RT	1225.00
+3	BF2	BFTask	27	female	19	LABFMixed	2	535	List12	won	$5.00	$5.00	-$3.13	$0.00	Mean Response.RT	535.00
+3	BF2	BFTask	28	female	19	LABFMixed	2	397	List12	lost	-$15.00	$12.00	-$15.00	$0.00	Mean Response.RT	397.00
+3	BF2	BFTask	29	female	19	LABFMixed	2	451	List12	lost	-$10.50	$6.00	-$10.50	$0.00	Mean Response.RT	451.00
+3	BF2	BFTask	30	female	19	LABFGain	2	768	List12	won	$11.00	$11.00	$0.00	$6.00	Mean Response.RT	768.00
+3	BF3	BFTask	1	female	19	LABFMixed	2	108	List13	won	$9.00	$9.00	-$11.25	$0.00	Mean Response.RT	108.00
+3	BF3	BFTask	2	female	19	LABFMixed	2	626	List13	won	$6.00	$6.00	-$7.50	$0.00	Mean Response.RT	626.00
+3	BF3	BFTask	3	female	19	LABFMixed	2	584	List13	lost	-$21.00	$12.00	-$21.00	$0.00	Mean Response.RT	584.00
+3	BF3	BFTask	4	female	19	LABFGain	2	1613	List13	won	$19.00	$19.00	$0.00	$8.00	Mean Response.RT	1613.00
+3	BF3	BFTask	5	female	19	LABFGain	1	530	List13	lost	$0.00	$12.00	$0.00	$5.00	Mean Response.RT	530.00
+3	BF3	BFTask	6	female	19	LABFMixed	2	352	List13	lost	-$13.50	$9.00	-$13.50	$0.00	Mean Response.RT	352.00
+3	BF3	BFTask	7	female	19	LABFMixed	2	397	List13	won	$10.00	$10.00	-$16.25	$0.00	Mean Response.RT	397.00
+3	BF3	BFTask	8	female	19	LABFMixed	2	1563	List13	lost	-$3.00	$6.00	-$3.00	$0.00	Mean Response.RT	1563.00
+3	BF3	BFTask	9	female	19	LABFMixed	2	345	List13	lost	-$12.00	$12.00	-$12.00	$0.00	Mean Response.RT	345.00
+3	BF3	BFTask	10	female	19	LABFMixed	2	350	List13	won	$5.00	$5.00	-$6.88	$0.00	Mean Response.RT	350.00
+3	BF3	BFTask	11	female	19	LABFMixed	2	339	List13	lost	-$2.75	$2.00	-$2.75	$0.00	Mean Response.RT	339.00
+3	BF3	BFTask	12	female	19	LABFMixed	1	1129	List13	lost	-$3.00	$12.00	-$3.00	$0.00	Mean Response.RT	1129.00
+3	BF3	BFTask	13	female	19	LABFMixed		0	List13	won	$5.00	$5.00	-$2.50	$0.00	Mean Response.RT	0.00
+3	BF3	BFTask	14	female	19	LABFMixed	2	349	List13	lost	-$5.63	$5.00	-$5.63	$0.00	Mean Response.RT	349.00
+3	BF3	BFTask	15	female	19	LABFMixed	2	354	List13	lost	-$3.00	$4.00	-$3.00	$0.00	Mean Response.RT	354.00
+3	BF3	BFTask	16	female	19	LABFMixed	2	376	List13	won	$4.00	$4.00	-$6.00	$0.00	Mean Response.RT	376.00
+3	BF3	BFTask	17	female	19	LABFGain	2	1253	List13	won	$5.00	$5.00	$0.00	$2.00	Mean Response.RT	1253.00
+3	BF3	BFTask	18	female	19	LABFMixed	1	731	List13	won	$9.00	$9.00	-$2.25	$0.00	Mean Response.RT	731.00
+3	BF3	BFTask	19	female	19	LABFGain	2	1280	List13	lost	$0.00	$26.00	$0.00	$10.00	Mean Response.RT	1280.00
+3	BF3	BFTask	20	female	19	LABFMixed	1	614	List13	won	$6.00	$6.00	-$1.50	$0.00	Mean Response.RT	614.00
+3	BF3	BFTask	21	female	19	LABFMixed	2	604	List13	won	$10.00	$10.00	-$6.25	$0.00	Mean Response.RT	604.00
+3	BF3	BFTask	22	female	19	LABFMixed	2	466	List13	lost	-$6.75	$9.00	-$6.75	$0.00	Mean Response.RT	466.00
+3	BF3	BFTask	23	female	19	LABFMixed	1	480	List13	won	$8.00	$8.00	-$3.00	$0.00	Mean Response.RT	480.00
+3	BF3	BFTask	24	female	19	LABFMixed	2	420	List13	lost	-$11.25	$10.00	-$11.25	$0.00	Mean Response.RT	420.00
+3	BF3	BFTask	25	female	19	LABFGain	2	1018	List13	won	$5.00	$5.00	$0.00	$3.00	Mean Response.RT	1018.00
+3	BF3	BFTask	26	female	19	LABFMixed	2	431	List13	won	$2.00	$2.00	-$1.75	$0.00	Mean Response.RT	431.00
+3	BF3	BFTask	27	female	19	LABFGain	2	773	List13	lost	$0.00	$28.00	$0.00	$13.00	Mean Response.RT	773.00
+3	BF3	BFTask	28	female	19	LABFMixed	2	251	List13	won	$8.00	$8.00	-$11.00	$0.00	Mean Response.RT	251.00
+3	BF3	BFTask	29	female	19	LABFGain	2	601	List13	lost	$0.00	$25.00	$0.00	$10.00	Mean Response.RT	601.00
+3	BF3	BFTask	30	female	19	LABFMixed	1	551	List13	lost	-$1.88	$5.00	-$1.88	$0.00	Mean Response.RT	551.00
+4	Other1	OtherTask	1	female	19	LAOtherMixed	2	531	List7	lost	-$3.75	$2.00	-$3.75	$0.00	Mean Response.RT	531.00
+4	Other1	OtherTask	2	female	19	LAOtherGain	2	881	List7	won	$17.00	$17.00	$0.00	$9.00	Mean Response.RT	881.00
+4	Other1	OtherTask	3	female	19	LAOtherMixed	2	486	List7	lost	-$15.75	$9.00	-$15.75	$0.00	Mean Response.RT	486.00
+4	Other1	OtherTask	4	female	19	LAOtherMixed	2	388	List7	lost	-$8.75	$10.00	-$8.75	$0.00	Mean Response.RT	388.00
+4	Other1	OtherTask	5	female	19	LAOtherGain	1	962	List7	won	$3.25	$3.25	$0.00	$1.00	Mean Response.RT	962.00
+4	Other1	OtherTask	6	female	19	LAOtherMixed	2	310	List7	lost	-$12.00	$6.00	-$12.00	$0.00	Mean Response.RT	310.00
+4	Other1	OtherTask	7	female	19	LAOtherMixed	2	484	List7	won	$6.00	$6.00	-$9.00	$0.00	Mean Response.RT	484.00
+4	Other1	OtherTask	8	female	19	LAOtherMixed	2	1010	List7	won	$12.00	$12.00	-$18.00	$0.00	Mean Response.RT	1010.00
+4	Other1	OtherTask	9	female	19	LAOtherMixed	2	352	List7	won	$9.00	$9.00	-$9.00	$0.00	Mean Response.RT	352.00
+4	Other1	OtherTask	10	female	19	LAOtherGain	2	1045	List7	lost	$0.00	$13.00	$0.00	$6.00	Mean Response.RT	1045.00
+4	Other1	OtherTask	11	female	19	LAOtherGain	2	1171	List7	lost	$0.00	$22.00	$0.00	$13.00	Mean Response.RT	1171.00
+4	Other1	OtherTask	12	female	19	LAOtherGain	1	1647	List7	won	$7.00	$7.00	$0.00	$3.00	Mean Response.RT	1647.00
+4	Other1	OtherTask	13	female	19	LAOtherMixed	2	324	List7	won	$5.00	$5.00	-$5.00	$0.00	Mean Response.RT	324.00
+4	Other1	OtherTask	14	female	19	LAOtherMixed	2	282	List7	lost	-$9.00	$12.00	-$9.00	$0.00	Mean Response.RT	282.00
+4	Other1	OtherTask	15	female	19	LAOtherMixed	2	528	List7	won	$4.00	$4.00	-$4.00	$0.00	Mean Response.RT	528.00
+4	Other1	OtherTask	16	female	19	LAOtherGain		0	List7	lost	$0.00	$8.00	$0.00	$4.25	Mean Response.RT	0.00
+4	Other1	OtherTask	17	female	19	LAOtherGain	2	604	List7	won	$10.00	$10.00	$0.00	$6.00	Mean Response.RT	604.00
+4	Other1	OtherTask	18	female	19	LAOtherMixed	2	977	List7	lost	-$13.00	$8.00	-$13.00	$0.00	Mean Response.RT	977.00
+4	Other1	OtherTask	19	female	19	LAOtherGain	1	1302	List7	lost	$0.00	$25.00	$0.00	$9.00	Mean Response.RT	1302.00
+4	Other1	OtherTask	20	female	19	LAOtherMixed	2	468	List7	won	$4.00	$4.00	-$8.00	$0.00	Mean Response.RT	468.00
+4	Other1	OtherTask	21	female	19	LAOtherMixed	2	450	List7	lost	-$1.25	$2.00	-$1.25	$0.00	Mean Response.RT	450.00
+4	Other1	OtherTask	22	female	19	LAOtherMixed	1	712	List7	won	$4.00	$4.00	-$1.00	$0.00	Mean Response.RT	712.00
+4	Other1	OtherTask	23	female	19	LAOtherMixed	2	542	List7	won	$8.00	$8.00	-$9.00	$0.00	Mean Response.RT	542.00
+4	Other1	OtherTask	24	female	19	LAOtherMixed	2	955	List7	lost	-$18.75	$10.00	-$18.75	$0.00	Mean Response.RT	955.00
+4	Other1	OtherTask	25	female	19	LAOtherGain	1	505	List7	lost	$0.00	$12.00	$0.00	$4.00	Mean Response.RT	505.00
+4	Other1	OtherTask	26	female	19	LAOtherMixed	1	374	List7	won	$8.00	$8.00	-$2.00	$0.00	Mean Response.RT	374.00
+4	Other1	OtherTask	27	female	19	LAOtherMixed	2	268	List7	lost	-$7.00	$8.00	-$7.00	$0.00	Mean Response.RT	268.00
+4	Other1	OtherTask	28	female	19	LAOtherGain	2	1562	List7	won	$4.00	$4.00	$0.00	$2.25	Mean Response.RT	1562.00
+4	Other1	OtherTask	29	female	19	LAOtherMixed	2	296	List7	won	$5.00	$5.00	-$8.13	$0.00	Mean Response.RT	296.00
+4	Other1	OtherTask	30	female	19	LAOtherMixed	2	613	List7	lost	-$4.38	$5.00	-$4.38	$0.00	Mean Response.RT	613.00
+4	Other2	OtherTask	1	female	19	LAOtherGain		0	List8	lost	$0.00	$17.00	$0.00	$10.00	Mean Response.RT	0.00
+4	Other2	OtherTask	2	female	19	LAOtherMixed	2	329	List8	won	$5.00	$5.00	-$3.13	$0.00	Mean Response.RT	329.00
+4	Other2	OtherTask	3	female	19	LAOtherMixed	2	1277	List8	won	$9.00	$9.00	-$4.50	$0.00	Mean Response.RT	1277.00
+4	Other2	OtherTask	4	female	19	LAOtherMixed	2	347	List8	lost	-$9.38	$5.00	-$9.38	$0.00	Mean Response.RT	347.00
+4	Other2	OtherTask	5	female	19	LAOtherMixed	2	754	List8	lost	-$18.00	$9.00	-$18.00	$0.00	Mean Response.RT	754.00
+4	Other2	OtherTask	6	female	19	LAOtherMixed	2	303	List8	won	$2.00	$2.00	-$3.25	$0.00	Mean Response.RT	303.00
+4	Other2	OtherTask	7	female	19	LAOtherGain	2	493	List8	lost	$0.00	$7.00	$0.00	$4.00	Mean Response.RT	493.00
+4	Other2	OtherTask	8	female	19	LAOtherMixed	1	1442	List8	lost	-$3.75	$10.00	-$3.75	$0.00	Mean Response.RT	1442.00
+4	Other2	OtherTask	9	female	19	LAOtherMixed	2	311	List8	won	$12.00	$12.00	-$24.00	$0.00	Mean Response.RT	311.00
+4	Other2	OtherTask	10	female	19	LAOtherMixed	2	805	List8	won	$4.00	$4.00	-$7.00	$0.00	Mean Response.RT	805.00
+4	Other2	OtherTask	11	female	19	LAOtherGain	2	91	List8	lost	$0.00	$11.00	$0.00	$6.00	Mean Response.RT	91.00
+4	Other2	OtherTask	12	female	19	LAOtherMixed	2	833	List8	lost	-$13.75	$10.00	-$13.75	$0.00	Mean Response.RT	833.00
+4	Other2	OtherTask	13	female	19	LAOtherMixed	1	215	List8	won	$2.00	$2.00	-$0.75	$0.00	Mean Response.RT	215.00
+4	Other2	OtherTask	14	female	19	LAOtherMixed	2	316	List8	won	$8.00	$8.00	-$5.00	$0.00	Mean Response.RT	316.00
+4	Other2	OtherTask	15	female	19	LAOtherMixed	2	706	List8	lost	-$15.00	$8.00	-$15.00	$0.00	Mean Response.RT	706.00
+4	Other2	OtherTask	16	female	19	LAOtherMixed	2	312	List8	lost	-$5.00	$4.00	-$5.00	$0.00	Mean Response.RT	312.00
+4	Other2	OtherTask	17	female	19	LAOtherGain	2	1100	List8	won	$13.00	$13.00	$0.00	$5.00	Mean Response.RT	1100.00
+4	Other2	OtherTask	18	female	19	LAOtherMixed	2	402	List8	lost	-$2.25	$2.00	-$2.25	$0.00	Mean Response.RT	402.00
+4	Other2	OtherTask	19	female	19	LAOtherMixed	2	352	List8	won	$8.00	$8.00	-$6.00	$0.00	Mean Response.RT	352.00
+4	Other2	OtherTask	20	female	19	LAOtherGain	1	334	List8	won	$4.00	$4.00	$0.00	$2.00	Mean Response.RT	334.00
+4	Other2	OtherTask	21	female	19	LAOtherGain	2	627	List8	won	$24.00	$24.00	$0.00	$12.00	Mean Response.RT	627.00
+4	Other2	OtherTask	22	female	19	LAOtherMixed	2	529	List8	lost	-$15.00	$12.00	-$15.00	$0.00	Mean Response.RT	529.00
+4	Other2	OtherTask	23	female	19	LAOtherGain	1	758	List8	won	$22.00	$22.00	$0.00	$10.00	Mean Response.RT	758.00
+4	Other2	OtherTask	24	female	19	LAOtherGain	1	868	List8	lost	$0.00	$30.00	$0.00	$12.00	Mean Response.RT	868.00
+4	Other2	OtherTask	25	female	19	LAOtherMixed	1	1209	List8	lost	-$2.00	$4.00	-$2.00	$0.00	Mean Response.RT	1209.00
+4	Other2	OtherTask	26	female	19	LAOtherMixed	2	471	List8	won	$6.00	$6.00	-$4.50	$0.00	Mean Response.RT	471.00
+4	Other2	OtherTask	27	female	19	LAOtherMixed	2	717	List8	lost	-$6.00	$6.00	-$6.00	$0.00	Mean Response.RT	717.00
+4	Other2	OtherTask	28	female	19	LAOtherMixed	2	291	List8	won	$6.00	$6.00	-$10.50	$0.00	Mean Response.RT	291.00
+4	Other2	OtherTask	29	female	19	LAOtherGain	1	488	List8	lost	$0.00	$8.00	$0.00	$3.00	Mean Response.RT	488.00
+4	Other2	OtherTask	30	female	19	LAOtherMixed	2	1029	List8	won	$12.00	$12.00	-$6.00	$0.00	Mean Response.RT	1029.00
+4	Other3	OtherTask	1	female	19	LAOtherMixed	2	272	List9	won	$12.00	$12.00	-$21.00	$0.00	Mean Response.RT	272.00
+4	Other3	OtherTask	2	female	19	LAOtherGain	1	1029	List9	lost	$0.00	$28.00	$0.00	$13.00	Mean Response.RT	1029.00
+4	Other3	OtherTask	3	female	19	LAOtherMixed	2	115	List9	won	$6.00	$6.00	-$1.50	$0.00	Mean Response.RT	115.00
+4	Other3	OtherTask	4	female	19	LAOtherMixed	2	353	List9	lost	-$11.00	$8.00	-$11.00	$0.00	Mean Response.RT	353.00
+4	Other3	OtherTask	5	female	19	LAOtherMixed	1	1286	List9	lost	-$3.00	$6.00	-$3.00	$0.00	Mean Response.RT	1286.00
+4	Other3	OtherTask	6	female	19	LAOtherGain	1	555	List9	won	$25.00	$25.00	$0.00	$10.00	Mean Response.RT	555.00
+4	Other3	OtherTask	7	female	19	LAOtherMixed	2	402	List9	lost	-$11.25	$10.00	-$11.25	$0.00	Mean Response.RT	402.00
+4	Other3	OtherTask	8	female	19	LAOtherMixed	1	367	List9	lost	-$1.88	$5.00	-$1.88	$0.00	Mean Response.RT	367.00
+4	Other3	OtherTask	9	female	19	LAOtherMixed	1	717	List9	won	$5.00	$5.00	-$2.50	$0.00	Mean Response.RT	717.00
+4	Other3	OtherTask	10	female	19	LAOtherMixed	2	458	List9	lost	-$13.50	$9.00	-$13.50	$0.00	Mean Response.RT	458.00
+4	Other3	OtherTask	11	female	19	LAOtherGain		0	List9	won	$19.00	$19.00	$0.00	$8.00	Mean Response.RT	0.00
+4	Other3	OtherTask	12	female	19	LAOtherMixed	1	1181	List9	won	$9.00	$9.00	-$2.25	$0.00	Mean Response.RT	1181.00
+4	Other3	OtherTask	13	female	19	LAOtherMixed	2	299	List9	lost	-$2.75	$2.00	-$2.75	$0.00	Mean Response.RT	299.00
+4	Other3	OtherTask	14	female	19	LAOtherMixed	2	529	List9	won	$10.00	$10.00	-$6.25	$0.00	Mean Response.RT	529.00
+4	Other3	OtherTask	15	female	19	LAOtherMixed		0	List9	won	$4.00	$4.00	-$6.00	$0.00	Mean Response.RT	0.00
+4	Other3	OtherTask	16	female	19	LAOtherMixed	1	413	List9	lost	-$3.00	$12.00	-$3.00	$0.00	Mean Response.RT	413.00
+4	Other3	OtherTask	17	female	19	LAOtherMixed	2	330	List9	won	$10.00	$10.00	-$16.25	$0.00	Mean Response.RT	330.00
+4	Other3	OtherTask	18	female	19	LAOtherGain	1	582	List9	lost	$0.00	$12.00	$0.00	$5.00	Mean Response.RT	582.00
+4	Other3	OtherTask	19	female	19	LAOtherMixed	2	380	List9	lost	-$11.25	$9.00	-$11.25	$0.00	Mean Response.RT	380.00
+4	Other3	OtherTask	20	female	19	LAOtherMixed	2	362	List9	won	$4.00	$4.00	-$3.00	$0.00	Mean Response.RT	362.00
+4	Other3	OtherTask	21	female	19	LAOtherMixed	2	320	List9	won	$5.00	$5.00	-$6.88	$0.00	Mean Response.RT	320.00
+4	Other3	OtherTask	22	female	19	LAOtherMixed	2	621	List9	lost	-$6.75	$9.00	-$6.75	$0.00	Mean Response.RT	621.00
+4	Other3	OtherTask	23	female	19	LAOtherMixed	2	891	List9	lost	-$12.00	$12.00	-$12.00	$0.00	Mean Response.RT	891.00
+4	Other3	OtherTask	24	female	19	LAOtherMixed	2	544	List9	won	$2.00	$2.00	-$1.75	$0.00	Mean Response.RT	544.00
+4	Other3	OtherTask	25	female	19	LAOtherGain	1	1133	List9	lost	$0.00	$5.00	$0.00	$3.00	Mean Response.RT	1133.00
+4	Other3	OtherTask	26	female	19	LAOtherGain	1	331	List9	won	$5.00	$5.00	$0.00	$2.00	Mean Response.RT	331.00
+4	Other3	OtherTask	27	female	19	LAOtherGain	1	649	List9	lost	$0.00	$26.00	$0.00	$10.00	Mean Response.RT	649.00
+4	Other3	OtherTask	28	female	19	LAOtherMixed	2	423	List9	lost	-$5.63	$5.00	-$5.63	$0.00	Mean Response.RT	423.00
+4	Other3	OtherTask	29	female	19	LAOtherMixed	2	493	List9	won	$6.00	$6.00	-$7.50	$0.00	Mean Response.RT	493.00
+4	Other3	OtherTask	30	female	19	LAOtherMixed	1	354	List9	won	$8.00	$8.00	-$3.00	$0.00	Mean Response.RT	354.00
+5	NULL	Ratings	NULL	female	19	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	Mean Response.RT	N/A
