@@ -1,0 +1,53 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+
+#change to data directory
+setwd("/Users/farerilab/Documents/GitHub/SLA_Empathy/filtered/")
+
+#read in data file
+SLA_Empathy1_30<-read.csv(file = "SLA_Empathy_allsubs_NAs.csv", header = TRUE)
+
+#list variables in dataset
+ls(SLA_Empathy1_30)
+
+#load in requisite libraries
+library(sjPlot)
+library(sjmisc)
+library(sjstats)
+library(sjlme4)
+library(lmerTest)
+library(ggplot2)
+
+
+#run basic analysis
+glm2<-glmer(Response~Amount1 + Amount2 + Certain + Partner + (1|Subject), data = SLA_Empathy1_30, family = binomial(link=logit))
+
+summary(glm2)
+
+plot_model(model=glm2,type=c("pred"))
+
+glm3<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + (1|Subject), data = SLA_Empathy1_30, family = binomial(link=logit))
+
+summary(glm3)
+
+plot_model(model=glm3, type=c("pred"))
+```
+
