@@ -1,0 +1,71 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+```{r}
+#set working directory
+
+setwd('//Users/dfareri/Dropbox/Dominic/Github/fareri-lab/SLA_Empathy/filtered')
+Behav<-read.csv(file='SLA_Empathy_allsubs_NAs.csv',sep=',',header=TRUE)
+
+```
+
+```{r}
+#clear workspace
+rm(list=ls());
+
+#set working directory
+
+setwd('//Users/dfareri/Dropbox/Dominic/Github/fareri-lab/SLA_Empathy/')
+Questionnaires<-read.csv(file='SLA_Empathy_pre-task_scored.csv',sep=',',header=TRUE)
+
+subj = c(
+         "153",
+         "154",
+         "155",
+         "156",
+         "157",
+         "158",
+         "159",
+         "160",
+         "161",
+         "162",
+         "163",
+         "164",
+         "165",
+         "166",
+         "167",
+         "168",
+         "169",
+         "170",
+         "171",
+         "172",
+         "173",
+         "174")
+
+nsubj=length(subj)
+trial=(1:270)
+ntrial=length(trial)
+run=(0:2)
+nrun=length(run)
+
+Behav$RSE<-NA
+
+for(i in 1:nsubj){
+          RSE<-(Questionnaires$TOTAL.RSE.ALL[Questionnaires$Subject.ID==subj[i]])
+          Behav$RSE[Behav$Subject==subj[i]]<-RSE
+}
+
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
