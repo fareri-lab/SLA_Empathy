@@ -1,0 +1,67 @@
+Start Date,End Date,Response Type,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Distribution Channel,User Language,Subject ID,Please enter your age.,Please indicate your biological sex.,Please indicate your gender.,"Please indicate how well the following statements describe you:
+
+
+I daydream and fantasize, with some regularity, about things that might happen to me.","I often have tender, concerned feelings for people less fortunate than me.","I sometimes find it difficult to see things from the ""other guy's"" point of view.",Sometimes I don't feel very sorry for other people when they are having problems.,I really get involved with the feelings of the characters in a novel.,"In emergency situations, I feel apprehensive and ill-at-ease.","I am usually objective when I watch a movie or play, and I don't often get completely
+caught up in it.",I try to look at everybody's side of a disagreement before I make a decision.,"When I see someone being taken advantage of, I feel kind of protective towards them.",I sometimes feel helpless when I am in the middle of a very emotional situation.,"I sometimes try to understand my friends better by imagining how things look from
+their perspective.",Becoming extremely involved in a good book or movie is somewhat rare for me.,"When I see someone get hurt, I tend to remain calm.",Other people's misfortunes do not usually disturb me a great deal.,"If I'm sure I'm right about something, I don't waste much time listening to other
+people's arguments.","After seeing a play or movie, I have felt as though I were one of the characters.",Being in a tense emotional situation scares me,"When I see someone being treated unfairly, I sometimes don't feel very much pity for
+them",I am usually pretty effective in dealing with emergencies.,I am often quite touched by things that I see happen,I believe that there are two sides to every question and try to look at them both.,I would describe myself as a pretty soft-hearted person.,"When I watch a good movie, I can very easily put myself in the place of a leading
+character.",I tend to lose control during emergencies.,"When I'm upset at someone, I usually try to ""put myself in his shoes"" for a while.","When I am reading an interesting story or novel, I imagine how I would feel if the
+events in the story were happening to me.","When I see someone who badly needs help in an emergency, I go to pieces.","Before criticizing somebody, I try to imagine how I would feel if I were in their place.","Please indicate how much you agree or disagree with the following statements:
+
+
+I feel that I am a person of worth, at least on an equal basis with others.",I feel that I have a number of good qualities.,"All in all, I am inclined to feel that I am a failure.",I am able to do things as well as most other people.,I feel I do not have much to be proud of.,I take a positive attitude toward myself.,"On the whole, I am satisfied with myself.",I wish I could have more respect for myself.,I certainly feel useless at times.,At times I think I am no good at all.,"Please indicate how much you agree or disagree with the following statements:
+
+
+I prefer to do things with others rather than on
+my own","I prefer to do things the same way over and over
+again.","If I try to imagine something, I find it very easy
+to create a picture in my mind","I frequently get so strongly absorbed in one
+thing that I lose sight of other things.","When I’m reading a story, I can easily imagine
+what the characters might look like.","In a social group, I can easily keep track of
+several different people’s conversations.",I find social situations easy,I tend to notice details that others do not.,"I tend to have very strong interests which I get
+upset about if I can’t pursue.",I enjoy social chit-chat.,"When I talk, it isn’t always easy for others to get
+a word in edgewise.",I am fascinated by numbers,"When I’m reading a story, I find it difficult to
+work out the characters’ intentions.",I find it hard to make new friends.,I notice patterns in things all the time.,"It does not upset me if my daily routine is
+disturbed.","I usually concentrate more on the whole picture,
+rather than the small details.","I don’t usually notice small changes in a
+situation, or a person’s appearance.",I find it easy to do more than one thing at once.,I enjoy doing things spontaneously.,"People often tell me that I keep going on and on
+about the same thing.","When I was young, I used to enjoy playing
+games involving pretending with other children.","I find it difficult to imagine what it would be
+like to be someone else.","I like to plan any activities I participate in
+carefully.",I enjoy social occasions.,I find it difficult to work out people’s intentions.,New situations make me anxious.,I enjoy meeting new people.,"I am not very good at remembering people’s
+date of birth.","Please indicate how much you agree or disagree with the following statements:
+
+
+There is a special person who is around when I am in need.","There is a special person with
+ whom I can share joys and sorrows.",My family really tries to help me.,"I get the emotional help & support
+ I need from my family.","I have a special person who is
+ a real source of comfort to me.",My friends really try to help me,"I can count on my friends when
+ things go wrong.","I can talk about my problems with
+ my family.","I have friends with whom I can
+ share my joys and sorrows.","There is a special person in my
+ life who cares about my feelings.","My family is willing to help me
+ make decisions.","I can talk about my problems with
+ my friends.",RandomID,EC_IRI
+11/18/19 5:53,11/18/19 6:12,0,100,1171,1,11/18/19 6:12,R_AsVgTjJtDT20tuF,anonymous,EN,153,19,2,2,2,2,0,4,2,1,0,3,4,2,3,1,2,2,1,1,1,4,3,2,3,2,2,0,0,2,0,1,1,1,4,2,4,2,2,2,3,3,2,3,2,3,2,2,3,2,2,1,4,4,3,4,2,2,3,1,2,2,4,1,3,2,1,1,3,1,3,7,7,7,7,7,6,6,6,6,6,7,7,5129246,20
+11/18/19 6:59,11/18/19 7:55,0,100,3375,1,11/18/19 7:55,R_2CdIXASJcbmXWWi,anonymous,EN,154,20,2,2,1,2,1,2,1,1,1,1,1,1,1,0,2,3,0,1,1,4,1,1,2,3,1,0,1,1,0,2,2,2,3,2,3,2,2,2,2,2,2,2,2,2,1,3,1,2,2,1,3,3,3,4,2,3,3,2,3,2,4,4,2,1,1,2,2,2,2,6,6,6,6,6,6,5,5,5,6,6,5,9276539,16
+11/19/19 7:05,11/19/19 7:41,0,100,2194,1,11/19/19 7:41,R_3FPRU55uF4SPtq3,anonymous,EN,155,18,2,2,2,3,0,4,1,4,0,3,2,3,2,2,1,3,3,1,3,4,0,1,3,2,0,1,1,1,1,2,1,1,4,2,4,2,2,2,3,4,2,3,3,4,1,4,3,2,1,1,3,4,3,4,2,3,3,4,3,2,4,1,2,3,1,2,3,1,2,7,7,7,7,7,5,5,7,5,7,7,6,6519606,19
+11/19/19 8:38,11/19/19 9:09,0,100,1824,1,11/19/19 9:09,R_Xv871RhGjlogsjT,anonymous,EN,156,20,2,2,2,3,1,4,4,2,0,3,3,4,3,0,2,3,1,4,3,3,2,3,4,4,4,1,3,4,3,4,2,2,2,2,2,2,3,2,1,1,2,1,1,3,1,1,2,2,3,2,4,1,3,3,2,3,2,3,2,2,4,2,3,2,2,2,2,2,4,3,5,6,6,2,5,6,6,6,2,6,6,4924719,23
+11/21/19 7:11,11/21/19 7:40,0,100,1767,1,11/21/19 7:40,R_Qb9h6p29lEIDjZ7,anonymous,EN,157,18,2,2,4,2,0,3,3,1,0,1,2,4,1,0,0,4,3,0,4,4,1,3,1,1,2,0,1,2,0,4,1,2,3,2,3,2,3,2,2,3,2,1,1,3,1,2,3,1,1,2,4,3,4,3,3,4,4,4,4,1,1,2,2,4,1,3,1,2,3,4,5,4,4,3,1,1,5,7,7,7,7,2313485,19
+11/21/19 8:32,11/21/19 9:05,0,100,1967,1,11/21/19 9:05,R_XGNtfSXbcbIlg7T,anonymous,EN,158,18,1,1,3,2,1,2,1,0,3,3,4,3,4,2,3,2,4,0,3,4,4,2,3,2,3,0,3,4,0,3,1,1,3,2,2,2,3,2,2,4,3,2,1,4,1,3,3,1,4,2,4,4,2,2,1,1,4,3,2,1,2,1,3,1,2,1,2,2,1,7,7,6,6,6,5,5,3,7,7,7,6,3445666,18
+11/22/19 7:14,11/22/19 7:31,0,100,1043,1,11/22/19 7:31,R_cUz28hz2boSW38l,anonymous,EN,159,18,2,2,2,2,0,4,1,2,0,1,2,3,3,0,0,3,2,1,2,2,0,1,4,1,1,1,3,3,1,3,2,2,3,2,3,2,2,2,2,2,2,2,2,2,2,2,2,1,2,1,3,3,2,3,2,3,2,3,4,2,3,1,1,2,1,2,1,1,4,6,6,6,7,4,6,6,4,6,4,6,6,6354325,15
+11/26/19 5:49,11/26/19 6:13,0,100,1450,1,11/26/19 6:13,R_Um8wtzm3VZW5A9b,anonymous,EN,160,19,1,1,4,4,1,4,3,4,1,3,4,0,3,2,2,3,4,3,0,3,4,3,3,1,3,0,1,4,3,3,1,2,3,2,3,2,2,2,2,2,1,2,1,3,2,2,2,1,1,2,2,3,2,3,1,2,2,4,2,2,2,4,3,2,2,4,2,1,1,7,7,7,7,7,7,7,7,6,6,7,5,6403402,22
+11/26/19 7:19,11/26/19 7:42,0,100,1388,1,11/26/19 7:42,R_2qad7BAe2oNS3Q1,anonymous,EN,161,18,1,1,3,3,1,3,3,2,3,3,2,2,4,0,1,4,0,3,2,4,1,3,3,2,3,1,2,3,1,3,3,3,2,2,2,3,3,1,1,1,2,3,1,1,1,2,4,1,2,3,4,4,3,1,1,2,3,4,3,1,2,2,3,1,3,4,1,3,1,4,4,7,7,3,5,4,6,5,2,5,3,8825929,21
+11/26/19 8:35,11/26/19 9:09,0,100,2053,1,11/26/19 9:09,R_3hFw2rjATkjMgqy,anonymous,EN,162,19,1,1,3,3,1,2,1,2,1,4,2,1,4,3,2,3,4,0,2,4,1,3,3,3,1,1,3,0,1,2,2,2,4,2,4,2,1,3,2,3,2,1,1,2,2,3,3,2,1,3,3,4,3,2,1,4,2,3,3,1,3,1,3,3,2,3,2,2,2,6,6,7,7,6,6,6,6,6,6,6,7,8252217,20
+12/2/19 7:24,12/2/19 7:37,0,100,782,1,12/2/19 7:37,R_3e5fbLTxHDJRber,anonymous,EN,163,18,2,2,4,2,1,3,3,3,1,3,3,3,3,1,1,4,1,1,3,4,1,3,1,3,3,1,3,3,1,3,2,2,3,2,3,2,3,2,2,2,2,3,1,2,2,2,3,2,2,2,3,2,4,2,3,2,3,3,1,2,2,1,3,3,2,3,2,2,3,6,6,3,4,6,6,6,5,6,6,6,5,6571888,22
+12/3/19 8:51,12/3/19 9:19,0,100,1673,1,12/3/19 9:19,R_bxUDPDJxI4AUp69,anonymous,EN,164,19,2,2,2,1,1,4,0,2,0,3,3,2,2,1,1,4,1,1,3,4,1,4,2,3,2,0,1,2,0,1,2,2,3,2,3,2,2,2,2,3,1,2,2,2,2,3,3,2,2,2,2,3,2,2,2,4,2,3,4,2,2,2,3,2,3,2,1,2,2,5,6,4,5,6,6,6,5,6,6,6,6,6203211,23
+12/4/19 7:20,12/4/19 7:41,0,100,1270,1,12/4/19 7:41,R_3qRm6h8hRBWRjVL,anonymous,EN,165,18,1,1,2,3,1,3,1,1,1,2,3,1,3,0,2,3,3,2,1,3,2,2,3,2,1,0,2,3,0,3,2,2,4,2,4,1,2,2,3,4,2,2,1,2,2,3,2,2,2,2,2,3,4,3,3,1,2,3,2,2,3,2,3,3,2,3,3,2,3,4,5,7,7,6,6,7,5,5,5,6,6,3335417,19
+12/10/19 7:24,12/10/19 7:34,0,100,609,1,12/10/19 7:34,R_3HnAoTJcuO0iZ56,anonymous,EN,166,18,2,2,2,2,1,4,3,3,0,2,1,2,3,1,1,4,1,0,3,4,0,2,2,2,0,3,0,2,2,1,2,2,3,2,3,2,3,2,2,3,1,2,2,2,3,3,3,3,2,2,3,4,3,2,3,3,2,2,4,3,2,1,3,1,3,2,1,2,1,6,6,7,7,6,6,5,6,6,6,6,6,8357823,19
+12/10/19 8:26,12/10/19 9:14,0,100,2875,1,12/10/19 9:14,R_290sYRGuf0zMBFw,anonymous,EN,167,19,2,2,3,3,0,3,2,3,0,2,2,3,2,0,0,4,0,3,2,4,0,2,2,3,2,3,2,3,3,2,2,2,2,3,2,3,3,2,2,3,2,1,2,1,1,2,4,2,1,4,3,4,3,2,1,4,2,2,2,1,1,1,3,1,2,3,2,4,4,6,7,6,4,7,6,5,4,4,7,7,4,1898778,21
+12/10/19 10:06,12/10/19 10:17,0,100,661,1,12/10/19 10:17,R_1F9WH9atEph9ZlO,anonymous,EN,168,23,1,1,3,1,3,1,1,4,3,1,3,4,2,3,1,3,1,0,2,1,1,2,1,3,2,1,0,3,3,3,3,3,2,3,2,3,2,1,2,2,3,3,4,2,3,3,4,1,3,3,2,2,3,2,1,2,3,2,2,3,3,1,2,2,3,3,2,3,1,3,2,5,6,2,2,5,6,2,3,6,4,6729121,14
+12/11/19 8:19,12/11/19 8:43,0,100,1440,1,12/11/19 8:43,R_2B57pa5aJatea6C,anonymous,EN,169,18,2,2,4,4,0,4,3,0,1,4,4,1,2,0,4,4,3,2,2,4,3,3,3,3,3,1,1,3,0,4,1,1,3,2,4,2,2,2,3,3,2,2,1,2,2,1,2,2,3,2,3,4,2,3,4,3,2,2,2,2,3,1,3,2,2,3,3,2,3,7,7,7,7,7,7,7,7,7,7,7,7,1755234,26
+12/11/19 9:34,12/11/19 9:53,0,100,1127,1,12/11/19 9:53,R_1QgSVxPI56vsTTq,anonymous,EN,170,19,2,2,4,4,0,4,3,2,1,4,4,3,3,1,1,4,0,2,1,4,1,3,4,4,2,0,3,2,1,3,2,2,3,2,3,2,3,3,2,3,2,4,2,3,1,2,2,2,2,1,3,4,4,3,2,2,3,4,3,1,3,2,4,2,1,4,1,2,2,6,6,4,4,6,6,5,4,6,6,6,6,7097497,27
+1/28/20 7:16,1/28/20 7:33,0,100,1038,1,1/28/20 7:33,R_1QlIpxGyjfgUs7T,anonymous,EN,171,19,2,2,1,2,1,1,3,0,1,4,3,0,4,1,1,3,3,1,3,3,4,1,4,2,2,0,3,3,4,4,2,1,3,2,3,1,2,2,3,4,3,4,1,4,2,1,1,1,1,2,2,2,4,2,1,3,1,4,2,1,3,3,3,3,2,4,3,3,1,2,3,3,1,6,6,4,1,5,6,2,5,4398192,15
+1/28/20 10:12,1/28/20 10:27,0,100,905,1,1/28/20 10:27,R_poMjRmQN24O9FXr,anonymous,EN,172,18,2,2,1,1,0,4,0,2,0,3,2,2,3,2,1,4,1,0,1,4,2,1,3,3,1,0,3,0,0,3,2,2,3,3,3,2,2,2,2,3,2,2,2,3,2,2,2,2,3,2,3,2,2,2,2,3,2,3,2,2,2,2,3,2,2,3,2,2,4,6,6,5,5,6,4,5,6,6,6,6,6,9609453,19
+1/30/20 7:10,1/30/20 7:35,0,100,1499,1,1/30/20 7:35,R_DioL86A53pJYNeF,anonymous,EN,173,23,2,2,3,3,1,1,4,1,0,3,4,3,3,0,2,3,1,1,0,4,3,3,3,3,3,0,3,2,0,3,2,2,3,2,3,3,3,2,2,2,2,3,1,2,2,3,2,2,2,3,3,2,3,2,2,2,2,2,2,2,3,2,2,3,2,2,3,2,3,5,5,3,2,6,5,5,3,5,6,4,5,4065182,21
+1/30/20 10:32,1/30/20 11:06,0,100,2020,1,1/30/20 11:06,R_2dS03eTR1udy3Rx,anonymous,EN,174,21,2,2,3,4,0,4,4,3,0,4,4,3,4,0,2,4,1,3,3,4,2,4,4,2,4,2,1,4,1,4,4,4,1,3,1,4,4,1,1,1,2,2,2,3,1,3,3,1,3,2,3,4,4,2,2,3,3,4,3,3,2,3,4,3,1,3,2,2,1,7,7,1,1,7,7,6,1,7,7,2,7,4172186,26
