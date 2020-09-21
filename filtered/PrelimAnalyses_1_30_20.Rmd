@@ -20,7 +20,10 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 ```{r}
 
 #change to data directory
-setwd("/Users/farerilab/Documents/GitHub/SLA_Empathy/filtered/")
+#labcomputers
+#setwd("/Users/farerilab/Documents/GitHub/SLA_Empathy/filtered/")
+#dom comp
+setwd("/Users/dfareri/Dropbox/Dominic/Github/fareri-lab/SLA_Empathy/filtered/")
 
 #read in data file
 SLA_Empathy1_30<-read.csv(file = "SLA_Empathy_allsubs_NAs.csv", header = TRUE)
@@ -28,26 +31,70 @@ SLA_Empathy1_30<-read.csv(file = "SLA_Empathy_allsubs_NAs.csv", header = TRUE)
 #list variables in dataset
 ls(SLA_Empathy1_30)
 
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==153]<-IRI$EC[IRI$Subject.ID==153]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==154]<-IRI$EC[IRI$Subject.ID==154]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==155]<-IRI$EC[IRI$Subject.ID==155]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==156]<-IRI$EC[IRI$Subject.ID==156]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==157]<-IRI$EC[IRI$Subject.ID==157]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==158]<-IRI$EC[IRI$Subject.ID==158]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==159]<-IRI$EC[IRI$Subject.ID==159]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==160]<-IRI$EC[IRI$Subject.ID==160]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==161]<-IRI$EC[IRI$Subject.ID==161]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==162]<-IRI$EC[IRI$Subject.ID==162]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==163]<-IRI$EC[IRI$Subject.ID==163]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==164]<-IRI$EC[IRI$Subject.ID==164]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==165]<-IRI$EC[IRI$Subject.ID==165]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==166]<-IRI$EC[IRI$Subject.ID==166]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==167]<-IRI$EC[IRI$Subject.ID==167]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==168]<-IRI$EC[IRI$Subject.ID==168]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==169]<-IRI$EC[IRI$Subject.ID==169]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==170]<-IRI$EC[IRI$Subject.ID==170]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==171]<-IRI$EC[IRI$Subject.ID==171]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==172]<-IRI$EC[IRI$Subject.ID==172]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==173]<-IRI$EC[IRI$Subject.ID==173]
+SLA_Empathy1_30$IRI[SLA_Empathy1_30$Subject==174]<-IRI$EC[IRI$Subject.ID==174]
+
+
+ls(length(unique(SLA_Empathy1_30$Subject)))
+
 #load in requisite libraries
 library(sjPlot)
 library(sjmisc)
 library(sjstats)
-library(sjlme4)
+library(lme4)
 library(lmerTest)
 library(ggplot2)
 
 
 #run basic analysis
-glm2<-glmer(Response~Amount1 + Amount2 + Certain + Partner + (1|Subject), data = SLA_Empathy1_30, family = binomial(link=logit))
+glm2<-glmer(Response~Amount1 + Amount2 + Certain + Partner + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+             control = glmerControl(optCtrl=list(maxfun=100000)))
 
 summary(glm2)
 
 plot_model(model=glm2,type=c("pred"))
 
-glm3<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + (1|Subject), data = SLA_Empathy1_30, family = binomial(link=logit))
+glm3<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+             control = glmerControl(optCtrl=list(maxfun=100000)))
 
 summary(glm3)
 
-plot_model(model=glm3, type=c("pred"))
-```
+glm3a<-glm(Response~Amount1 + Amount2 + Certain + Partner + SNS, data = SLA_Empathy1_30, family='binomial')
 
+summary(glm3a)
+
+plot_model(model=glm3, type=c("pred"))
+
+glm4<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+             control = glmerControl(optCtrl=list(maxfun=100000)))
+summary(glm4)
+
+glm5<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+             control = glmerControl(optCtrl=list(maxfun=100000)))
+
+summary(glm5)
+
+glm6<-glmer(Response~Amount1 + Amount2 + Certain + Partner*IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+             control = glmerControl(optCtrl=list(maxfun=100000)))
+summary(glm6)
+```
