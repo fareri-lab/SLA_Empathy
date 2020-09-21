@@ -79,13 +79,17 @@ glm3<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + (1|Subject), 
 
 summary(glm3)
 
+glm3a<-glm(Response~Amount1 + Amount2 + Certain + Partner + SNS, data = SLA_Empathy1_30, family='binomial')
+
+summary(glm3a)
+
 plot_model(model=glm3, type=c("pred"))
 
 glm4<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
              control = glmerControl(optCtrl=list(maxfun=100000)))
 summary(glm4)
 
-glm5<-glmer(Response~Amount1 + Amount2 + Certain + Partner  + IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
+glm5<-glmer(Response~Amount1 + Amount2 + Certain + Partner + SNS + IRI + (1|Subject), data = SLA_Empathy1_30, family='binomial',
              control = glmerControl(optCtrl=list(maxfun=100000)))
 
 summary(glm5)
@@ -94,4 +98,3 @@ glm6<-glmer(Response~Amount1 + Amount2 + Certain + Partner*IRI + (1|Subject), da
              control = glmerControl(optCtrl=list(maxfun=100000)))
 summary(glm6)
 ```
-
