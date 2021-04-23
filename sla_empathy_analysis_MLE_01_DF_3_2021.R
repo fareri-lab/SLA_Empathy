@@ -2,6 +2,7 @@
 #
 # Script to import and analyze Social Loss Aversion (SLA) data from collaboration with Dominic Fareri.
 # PSH 3/31/2017
+# Edited for Empathy data, 3/2021 by DSF
 
 rm(list = ls());
 library(lme4);
@@ -26,10 +27,9 @@ plotPTdata <- function(gains,losses,certain,choices,titletxt){
 
 
 #wd = '~/Documents/Dropbox/Libraries/R_lib/SLA/';
-setwd(getwd());
+setwd("/Users/farerilab/Documents/GitHub/SLA_Empathy");
 
-# d = read.csv('SLA_forPete.csv');
-d = read.csv('SLA_forPete_updated5_2018_duplicateRemoved.csv');
+d = read.csv('SLA_Empathy_allsubs_Final_03_31_DF.csv');
 d = d[is.finite(d$RT),]; # Dropping trials without RTs
 
 # d$Partner[d$Partner==3] = 2; # fixing a data entry error
@@ -37,10 +37,13 @@ d = d[is.finite(d$RT),]; # Dropping trials without RTs
 nS = length(unique(d$Subject));
 subjID = unique(d$Subject);
 nCond = length(unique(d$Condition)); #need to change this to Condition (self, friend, stranger)
-subjPartner = matrix(nrow = nS,ncol = 1);
-for (s in 1:nS){
-  subjPartner[s] = unique(d$Condition[d$Subject==s])
-}
+
+
+##relic of plotting, don't need for empathy project
+#subjPartner = matrix(nrow = nS,ncol = 1);
+#for (s in 1:nS){
+#  subjPartner[s] = unique(d$Condition[d$Subject==s])
+#}
 
 
 nTtoofast = array(data=NA,dim=c(nS,nCond));
@@ -150,7 +153,7 @@ summary(fit1)
 # Partner is whether choices are for self, other, or both. Everyone experiences all 3.
 # Condition is about who the other is. People are in one or the other condition.
 
-fit3 = glmer(Response ~ 1 + Amount1 + Amount2 + Certain + SNS + ConditionRecode + 
+fit3 = glmer(Response ~ 1 + Amount1 + Amount2 + Certain + SNS + Condition + 
                (0 + Amount1 + Amount2 + Certain | Subject),data=d,family='binomial',
              control = glmerControl(optCtrl=list(maxfun=100000)));
 summary(fit3)
@@ -170,7 +173,7 @@ library(parallel)
 # set_cppo('debug') # make debugging easier
 # set_cppo('fast') # for best running speed
 
-#d3 <- d[is.finite(d$Response),] # Subset out only the trials w/ responses
+d3 <- d[is.finite(d$Response),] # Subset out only the trials w/ responses
 
 #d3$selfother <- as.numeric(d3$Partner > 0); # 1 when someone else is involved, 0 when it's just you
 
@@ -181,20 +184,20 @@ library(parallel)
 
 
 dataList <- list(
-  choices = d$Response ,
-  gam1 = d$Amount1 ,
-  gam2 = d$Amount2 ,
-  cert = d$Certain ,
-  ind = d$Subject ,
-  selfother = d$SNS ,
+  choices = d3$Response ,
+  gam1 = d3$Amount1 ,
+  gam2 = d3$Amount2 ,
+  cert = d3$Certain ,
+  ind = d3$Subject ,
+  selfother = d3$SNS ,
   #partdiff = d$PartnerRecode , 
-  conddiff = d$Condition, 
-  nsubj = length(unique(d$Subject)) , 
-  N = length(d$Response)
+  conddiff = d3$Condition, 
+  nsubj = length(unique(d3$Subject)) , 
+  N = length(d3$Response)
 )
 
 
-stanmodel = 'sla_01_basic.stan'
+stanmodel = 'sla_empathy_01_basic.stan'
 
 nChains = 4
 fitSteps = 5000 # Stan will save half this many x nChains per parameter
@@ -261,4 +264,29 @@ par(mfrow=c(1,1))
 # Traceplot & hist code
 traceplot(fit1,"meanLambda")
 hist(exp(sSamples$meanLambda))
+
+
+
+#mean Effects
+meanRho<-mean(exp(sSamples$meanRho))
+meanLambda<-mean(exp(sSamples$meanLambda))
+meanMu<-mean(exp(sSamples$meanMu))
+
+quantile(probs=q95,exp(sSamples$rselfother))
+
+#Additive Effects
+RhoStranger<-exp(sSamples$meanRho + sSamples$rselfother + sSamples$rconddiff)
+RhoFriend<-exp(sSamples$meanRho + sSamples$rselfother - sSamples$rconddiff)
+RhoSelfOther<-exp(sSamples$meanRho + sSamples$rselfother)
+
+MuStranger<-exp(sSamples$meanMu + sSamples$mselfother + sSamples$mconddiff)
+MuFriend<-exp(sSamples$meanMu + sSamples$mselfother - sSamples$mconddiff)
+
+MuSelfOther<-exp(sSamples$meanMu + sSamples$mselfother)
+
+LambdaStranger<-exp(sSamples$meanLambda + sSamples$lselfother + sSamples$lconddiff)
+LambdaFriend<-exp(sSamples$meanLambda + sSamples$lselfother - sSamples$lconddiff)
+
+LambdaSelfOther<-exp(sSamples$meanLambda + sSamples$lselfother)
+
 
