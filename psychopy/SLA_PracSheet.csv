@@ -1,0 +1,4 @@
+﻿Weight,amount_1,amount_2,certain,gamble_outcome,gamble_amount,partner_name
+1,$2.00,-$3.75,$0.00,lost,-$3.75,Katie
+1,$17.00,$0.00,$9.00,won,$17.00,Katie
+1,$9.00,-$15.75,$0.00,lost,-$15.75,Katie
