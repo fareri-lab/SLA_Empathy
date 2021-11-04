@@ -161,9 +161,9 @@ globalClock = core.Clock()
 timer = core.Clock()
 
 #read in stimuli
-trial_data_friend  = [r for r in csv.DictReader(open('/Users/melziur/Desktop/SLA/Friend_SLA_96_COPY.csv','rU', encoding="utf-8"))]
-trial_data_self = [r for r in csv.DictReader(open('/Users/melziur/Desktop/SLA/Self_SLA_96_COPY.csv','rU', encoding="utf-8"))]
-trial_data_other  = [r for r in csv.DictReader(open('/Users/melziur/Desktop/SLA/Other_SLA_96_COPY.csv','rU', encoding="utf-8"))]
+trial_data_friend  = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Friend_SLA_96_COPY.csv','rU', encoding="utf-8"))]
+trial_data_self = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Self_SLA_96_COPY.csv','rU', encoding="utf-8"))]
+trial_data_other  = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Other_SLA_96_COPY.csv','rU', encoding="utf-8"))]
 
 #set up trial handlers
 trials_run_friend = data.TrialHandler(trial_data_friend[:], 1, method="sequential") #change to [] for full run
