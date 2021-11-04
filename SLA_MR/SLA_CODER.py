@@ -288,19 +288,19 @@ def do_run(run,trials):
 
             win.flip()
 
-        while timer.getTime() < trial_dur-2:
+        while timer.getTime() < trial_dur:
             # shareStim.draw()
             cue.draw()
             top_box.draw()
             top_text.draw()
             bottom_box.draw()
-
             bottom_text.draw()
+            certain_box.draw()
             certain_text.draw()
             win.flip()
 
 
-            #if answer == 0:
+
         resp = event.getKeys(keyList = responseKeys)
 
         if len(resp) > 0:
