@@ -1,4 +1,4 @@
-#### SLA_imaging ####
+﻿#### SLA_imaging ####
 
 # Melanie Ruiz
 # 10/2021
@@ -285,9 +285,9 @@ def do_run(run,trials):
             bottom_text.draw()
             certain_box.draw()
             certain_text.draw()
-
             win.flip()
 
+            resp != event.getKeys(keyList = responseKeys)
         while timer.getTime() < trial_dur:
             # shareStim.draw()
             cue.draw()
@@ -301,55 +301,53 @@ def do_run(run,trials):
 
 
 
-        resp = event.getKeys(keyList = responseKeys)
-
-        if len(resp) > 0:
-            if resp[0] == 'z':
-                os.chdir(subjdir)
-                trials.saveAsWideText(fileName)
-                os.chdir(expdir)
-                win.close()
-                core.quit()
-            resp_val = int(resp[0])
-            resp_onset = globalClock.getTime()
-            rt = resp_onset - trial_onset
-            ISI_pad = decision_dur-rt
-            #answer = 1
-            if resp_val == 1:
-                top_text.setColor('red')
-                bottom_text.setColor('red')
-                response = gamble_outcome
-                outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
-
-                gamble_outcome = trial['task_gamble_amount']
-
-
-            elif resp_val == 2:
-                certain_text.setColor('red')
-                response = trial['alt_certain']
-                outcomeMsg.setText(outcome_map[2] % (certain_amount))
-            # shareStim.draw()
-            top_box.draw()
-            top_text.draw()
-            bottom_box.draw()
-            bottom_text.draw()
-            certain_box.draw()
-            certain_text.draw()
-            cue.draw()
-            win.flip()
-            core.wait(.5)
-            # break
-
-        else:
-            resp_val = 999
-            outcomeMsg.setText(outcome_map[999])
-            response = 999
-            resp_onset = globalClock.getTime()
-            #highlow = 999
-            rt = 0
-            ISI_pad = 0
-
-            # break
+            resp = event.getKeys(keyList = responseKeys)
+    
+            if len(resp) > 0:
+                if resp[0] == 'z':
+                    os.chdir(subjdir)
+                    trials.saveAsWideText(fileName)
+                    os.chdir(expdir)
+                    win.close()
+                    core.quit()
+                resp_val = int(resp[0])
+                resp_onset = globalClock.getTime()
+                rt = resp_onset - trial_onset
+                ISI_pad = decision_dur-rt
+                #answer = 1
+                if resp_val == 1:
+                    top_text.setColor('red')
+                    bottom_text.setColor('red')
+                    response = gamble_outcome
+                    outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
+                    gamble_outcome = trial['task_gamble_amount']
+    
+                elif resp_val == 2:
+                    certain_text.setColor('red')
+                    response = trial['alt_certain']
+                    outcomeMsg.setText(outcome_map[2] % (certain_amount))
+               
+               # shareStim.draw()
+                top_box.draw()
+                top_text.draw()
+                bottom_box.draw()
+                bottom_text.draw()
+                certain_box.draw()
+                certain_text.draw()
+                cue.draw()
+                win.flip()
+                core.wait(.5)
+                break
+            else:
+                resp_val = 999
+                outcomeMsg.setText(outcome_map[999])
+                response = 999
+                resp_onset = globalClock.getTime()
+                #highlow = 999
+                rt = 0
+                ISI_pad = 0
+    
+                # break
 
         trials.addData('onset', trial_onset)
         trials.addData('bpress', resp_val)
@@ -365,6 +363,7 @@ def do_run(run,trials):
         certain_text.setColor('#FFFFFF')
         top_text.setText()
         bottom_text.setText()
+        certain_text.setText()
 
         #break
         #ISI
@@ -386,7 +385,9 @@ def do_run(run,trials):
         trials.addData('actual_ISI', actual_ISI)
         ISI_drift = actual_ISI-isi_for_trial
         trials.addData('ISI_drift', ISI_drift)
-        # #outcome phase
+       
+        
+       # #outcome phase
         # if len(resp) > 0:
         ISI_list.loc[trial['Trial_num'],'drift'] = float(ISI_drift)
         outcome_onset = globalClock.getTime()
