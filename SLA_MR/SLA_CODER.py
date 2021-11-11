@@ -1,4 +1,4 @@
-﻿#### SLA_imaging ####
+#### SLA_imaging ####
 
 # Melanie Ruiz
 # 10/2021
@@ -86,7 +86,7 @@ if friend_id == '':
     friend_id= 'your friend'
 
 if other_id == '':
-    other_id = 'a stranger'
+    other_id = 'the person you met today'
 
 run_data = {
     'Participant ID': subj_id,
@@ -112,7 +112,7 @@ ready_screen = visual.TextStim(win, text="Please wait for this round of the game
 #waiting = visual.TextStim(win, text="Waiting...", height=1.5)
 
 #decision screen
-shareStim =  visual.TextStim(win, pos=(0,1.5), height=1)
+# shareStim =  visual.TextStim(win, pos=(0,1.5), height=1)
 
 cue = visual.TextStim(win, pos=(0,1.5), height=1, text= '?')
 #pictureStim =  visual.ImageStim(win, pos=(0,8.0), size=(6.65,6.65))
@@ -123,7 +123,7 @@ bottom_text = visual.TextStim(win, pos=[-10, -5], height=1)
 certain_box = visual.Rect(win=win, name='polygon', width=(9.0,9.0)[0], height=(7.0,7.0)[1], ori=0, pos=(10,0),lineWidth=5, lineColor=[1,1,1], lineColorSpace='rgb',fillColor=[0,0,0], fillColorSpace='rgb',opacity=1, depth=0.0, interpolate=True)
 certain_text = visual.TextStim(win, pos=(10,0), height=1)
 outcomeMsg = visual.TextStim(win, pos = (0,1), wrapWidth=20, height = 1.2)
-block_msg = visual.TextStim(win, text='press space', pos = (0,1), wrapWidth=20, height = 1.2)
+block_msg = visual.TextStim(win, text='Great job! Please wait to proceed.', pos = (0,1), wrapWidth=20, height = 1.2)
 # outcome screen
 outcome_stim = visual.TextStim(win, text='')
 
@@ -161,9 +161,10 @@ globalClock = core.Clock()
 timer = core.Clock()
 
 #read in stimuli
-trial_data_friend  = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Friend_SLA_96_COPY.csv','rU', encoding="utf-8"))]
-trial_data_self = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Self_SLA_96_COPY.csv','rU', encoding="utf-8"))]
-trial_data_other  = [r for r in csv.DictReader(open('/Users/dfareri/Documents/GitHub/SLA_Empathy/SLA_MR/Other_SLA_96_COPY.csv','rU', encoding="utf-8"))]
+'%s/Self.csv' % (os.getcwd())
+trial_data_friend  = [r for r in csv.DictReader(open('%s/Friend_SLA_96.csv' % (os.getcwd()),'rU', encoding="utf-8"))]
+trial_data_self = [r for r in csv.DictReader(open('%s/Self_SLA_96.csv' % (os.getcwd()),'rU', encoding="utf-8"))]
+trial_data_other  = [r for r in csv.DictReader(open('%s/Other_SLA_96.csv' % (os.getcwd()),'rU', encoding="utf-8"))]
 
 #set up trial handlers
 trials_run_friend = data.TrialHandler(trial_data_friend[:], 1, method="sequential") #change to [] for full run
@@ -245,8 +246,8 @@ def do_run(run,trials):
         # get resp
         # add data to 'trial'
 
-        condition_label = stim_map[trial['Partner']]
-        shareStim.setText(condition_label)
+        # condition_label = stim_map[trial['Partner']]
+        # shareStim.setText(condition_label)
         gain_amount = trial['risky_gain']
         respcTop = '%s' % gain_amount
         top_text.setText(respcTop)
@@ -302,7 +303,7 @@ def do_run(run,trials):
 
 
             resp = event.getKeys(keyList = responseKeys)
-    
+
             if len(resp) > 0:
                 if resp[0] == 'z':
                     os.chdir(subjdir)
@@ -316,17 +317,17 @@ def do_run(run,trials):
                 ISI_pad = decision_dur-rt
                 #answer = 1
                 if resp_val == 1:
-                    top_text.setColor('red')
-                    bottom_text.setColor('red')
+                    top_text.setColor('darkorange')
+                    bottom_text.setColor('darkorange')
                     response = gamble_outcome
                     outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
                     gamble_outcome = trial['task_gamble_amount']
-    
+
                 elif resp_val == 2:
-                    certain_text.setColor('red')
+                    certain_text.setColor('darkorange')
                     response = trial['alt_certain']
                     outcomeMsg.setText(outcome_map[2] % (certain_amount))
-               
+
                # shareStim.draw()
                 top_box.draw()
                 top_text.draw()
@@ -346,7 +347,7 @@ def do_run(run,trials):
                 #highlow = 999
                 rt = 0
                 ISI_pad = 0
-    
+
                 # break
 
         trials.addData('onset', trial_onset)
@@ -372,7 +373,7 @@ def do_run(run,trials):
         trials.addData('ISI_onset', ISI_onset)
         timer.reset()
         # isi_for_trial = float(trial['ISI_s'])
-        given_ISI = float(trial['ISI_s'])
+        given_ISI = float(trial['ISI'])
         isi_for_trial = float(2-rt+given_ISI)
 
         fixation.draw()
@@ -385,8 +386,8 @@ def do_run(run,trials):
         trials.addData('actual_ISI', actual_ISI)
         ISI_drift = actual_ISI-isi_for_trial
         trials.addData('ISI_drift', ISI_drift)
-       
-        
+
+
        # #outcome phase
         # if len(resp) > 0:
         ISI_list.loc[trial['Trial_num'],'drift'] = float(ISI_drift)
@@ -404,17 +405,16 @@ def do_run(run,trials):
         #print(trial['Trial_num'])
         #print(type(trial['Trial_num']))
 
-        if trial['Trial_num'] == '3' or trial['Trial_num'] == '6':
-            block_msg.draw()
-            win.flip()
-            event.waitKeys(keyList=('space'))
-        else:
-            core.wait(.01)
+
         #ITI
         #logging.log(level=logging.DATA, msg='ITI') #send fixation log event
         timer.reset()
-        iti_for_trial = float(trial['ITI_s'])
-        iti_dur = iti_for_trial
+        if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96' :
+            iti_for_trial = sum(ISI_list['drift'])
+            # core.wait(10)
+        else:
+            iti_for_trial = float(trial['ITI'])
+
         ITI_onset = globalClock.getTime()
 
         fixation.draw()
@@ -424,9 +424,20 @@ def do_run(run,trials):
         ITI_offset = globalClock.getTime()
         trials.addData('ITI_onset', ITI_onset)
         trials.addData('ITI_offset', ITI_offset)
+        trials.addData('expected_ITI',iti_for_trial)
+        actual_ITI = ITI_offset-ITI_onset
+        trials.addData('actual_ITI', actual_ITI)
+        ITI_drift = actual_ITI-iti_for_trial
+        trials.addData('ISI_drift', ISI_drift)
 
 
-
+        if trial['Trial_num'] == '32' or trial['Trial_num'] == '64':
+            block_msg.draw()
+            win.flip()
+            # core.wait(10)
+            event.waitKeys(keyList=('space'))
+        else:
+            core.wait(.01)
 
 
 
