@@ -396,7 +396,7 @@ def do_run(run,trials):
         timer.reset()
         outcomeMsg.draw()
         win.flip()
-        core.wait(2)
+        core.wait(1)
         outcome_offset = globalClock.getTime()
 
         trials.addData('outcome_offset', outcome_offset)
