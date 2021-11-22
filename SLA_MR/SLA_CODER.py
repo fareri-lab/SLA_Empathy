@@ -272,7 +272,6 @@ def do_run(run,trials):
 
         #answer=0
         trial_onset=globalClock.getTime()
-        ISI_pad = []
 
         # while timer.getTime() < .5:
         #     shareStim.draw()
@@ -289,6 +288,7 @@ def do_run(run,trials):
             win.flip()
 
             resp != event.getKeys(keyList = responseKeys)
+
         while timer.getTime() < trial_dur:
             # shareStim.draw()
             cue.draw()
@@ -314,7 +314,6 @@ def do_run(run,trials):
                 resp_val = int(resp[0])
                 resp_onset = globalClock.getTime()
                 rt = resp_onset - trial_onset
-                ISI_pad = decision_dur-rt
                 #answer = 1
                 if resp_val == 1:
                     top_text.setColor('darkorange')
@@ -346,7 +345,6 @@ def do_run(run,trials):
                 resp_onset = globalClock.getTime()
                 #highlow = 999
                 rt = 0
-                ISI_pad = 0
 
                 # break
 
@@ -356,7 +354,6 @@ def do_run(run,trials):
         trials.addData('resp_onset', resp_onset)
         #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
-        trials.addData('ISIpad', ISI_pad)
 
         #reset rating number and amount
         top_text.setColor('#FFFFFF')
@@ -373,6 +370,8 @@ def do_run(run,trials):
         trials.addData('ISI_onset', ISI_onset)
         timer.reset()
         # isi_for_trial = float(trial['ISI_s'])
+
+        #next two lines account for rt of decision and adds to the ISI
         given_ISI = float(trial['ISI'])
         isi_for_trial = float(2-rt+given_ISI)
 
@@ -410,8 +409,10 @@ def do_run(run,trials):
         #logging.log(level=logging.DATA, msg='ITI') #send fixation log event
         timer.reset()
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96' :
-            iti_for_trial = sum(ISI_list['drift'])
+            #iti_for_trial = sum(ISI_list['drift'])
             # core.wait(10)
+            # this should instead be a long fixation minus the sum of ISI_drift
+            iti_for_trial = final_fixation_dur - sum(ISI_list['drift'])
         else:
             iti_for_trial = float(trial['ITI'])
 
