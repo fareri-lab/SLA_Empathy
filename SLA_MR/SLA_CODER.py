@@ -299,9 +299,8 @@ def do_run(run,trials):
             certain_box.draw()
             certain_text.draw()
             win.flip()
-
-
-
+            cue_onset = globalClock.getTime()
+            stim_presentation = cue_onset - trial_onset
             resp = event.getKeys(keyList = responseKeys)
 
             if len(resp) > 0:
@@ -350,8 +349,10 @@ def do_run(run,trials):
 
         trials.addData('onset', trial_onset)
         trials.addData('bpress', resp_val)
+        trials.addData('cue_onset', cue_onset)
         #trials.addData('resp', response)
         trials.addData('resp_onset', resp_onset)
+        trials.addData('stim_duration',stim_presentation)
         #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
 
@@ -367,7 +368,9 @@ def do_run(run,trials):
         #ISI
         #logging.log(level=logging.DATA, msg='ISI') #send fixation log event
         ISI_onset=globalClock.getTime()
+        cue_duration = ISI_onset - stim_presentation
         trials.addData('ISI_onset', ISI_onset)
+        trials.addData('cue_duration',cue_duration)
         timer.reset()
         # isi_for_trial = float(trial['ISI_s'])
 
