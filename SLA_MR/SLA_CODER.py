@@ -404,7 +404,10 @@ def do_run(run,trials):
         win.flip()
         core.wait(1)
         outcome_offset = globalClock.getTime()
-
+        outcome_dur = outcome_offset - outcome_onset
+        outcome_drift = outcome_dur - 1
+        trials.addData('outcome_duration', outcome_dur)
+        trials.addData('outcome_drift',outcome_drift)
         trials.addData('outcome_offset', outcome_offset)
         trials.addData('duration', outcome_offset-trial_onset)
 
