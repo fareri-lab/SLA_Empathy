@@ -410,7 +410,7 @@ def do_run(run,trials):
         trials.addData('outcome_drift',outcome_drift)
         trials.addData('outcome_offset', outcome_offset)
         trials.addData('duration', outcome_offset-trial_onset)
-        drift_list.loc[trial['Trial_num'],'trial_drift'] = sum(float(ISI_drift),float(cue_duration_drift),float(stim_duration_drift),float(outcome_drift))
+        drift_list.loc[trial['Trial_num'],'trial_drift'] = float(ISI_drift) + float(cue_duration_drift) + float(stim_duration_drift) + float(outcome_drift)
 
         #print(trial['Trial_num'])
         #print(type(trial['Trial_num']))
@@ -422,7 +422,7 @@ def do_run(run,trials):
 
         ITI_onset = globalClock.getTime()
 
-        if trial['Trial_num'] !== '32' or trial['Trial_num'] !== '64' or trial['Trial_num'] !== '96' :
+        if trial['Trial_num'] != '32' or trial['Trial_num'] != '64' or trial['Trial_num'] != '96':
             #iti_for_trial = sum(ISI_list['drift'])
             # core.wait(10)
             # this should instead be a long fixation minus the sum of ISI_drift
@@ -435,7 +435,7 @@ def do_run(run,trials):
             ITI_offset = globalClock.getTime()
             actual_ITI = ITI_offset-ITI_onset
             ITI_drift = actual_ITI-iti_for_trial
-            drift_list.loc[trial['Trial_num'],'ITI_drift'] = sum(float(ITI_drift))
+            drift_list.loc[trial['Trial_num'],'ITI_drift'] = sum(ITI_drift)
 
         else:
             iti_for_trial = final_fixation_dur - (sum(drift_list['trial_drift'],drift_list['ITI_drift']))
