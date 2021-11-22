@@ -318,13 +318,13 @@ def do_run(run,trials):
                 if resp_val == 1:
                     top_text.setColor('darkorange')
                     bottom_text.setColor('darkorange')
-                    response = gamble_outcome
+                    #response = gamble_outcome
                     outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
                     gamble_outcome = trial['task_gamble_amount']
 
                 elif resp_val == 2:
                     certain_text.setColor('darkorange')
-                    response = trial['alt_certain']
+                    #response = trial['alt_certain']
                     outcomeMsg.setText(outcome_map[2] % (certain_amount))
 
                # shareStim.draw()
@@ -341,7 +341,7 @@ def do_run(run,trials):
             else:
                 resp_val = 999
                 outcomeMsg.setText(outcome_map[999])
-                response = 999
+                #response = 999
                 resp_onset = globalClock.getTime()
                 #highlow = 999
                 rt = 0
@@ -350,7 +350,7 @@ def do_run(run,trials):
 
         trials.addData('onset', trial_onset)
         trials.addData('bpress', resp_val)
-        trials.addData('resp', response)
+        #trials.addData('resp', response)
         trials.addData('resp_onset', resp_onset)
         #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
