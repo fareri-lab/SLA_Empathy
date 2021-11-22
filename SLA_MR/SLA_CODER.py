@@ -353,6 +353,7 @@ def do_run(run,trials):
         #trials.addData('resp', response)
         trials.addData('resp_onset', resp_onset)
         trials.addData('stim_duration',stim_presentation)
+        stim_duration_drift = stim_presentation - 2
         #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
 
@@ -369,8 +370,11 @@ def do_run(run,trials):
         #logging.log(level=logging.DATA, msg='ISI') #send fixation log event
         ISI_onset=globalClock.getTime()
         cue_duration = ISI_onset - stim_presentation
+        cue_duration_drift = cue_duration - 2
         trials.addData('ISI_onset', ISI_onset)
         trials.addData('cue_duration',cue_duration)
+        trials.addData('cue_dur_drift', cue_duration_drift)
+
         timer.reset()
         # isi_for_trial = float(trial['ISI_s'])
 
