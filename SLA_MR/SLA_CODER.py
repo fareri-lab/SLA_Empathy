@@ -435,7 +435,7 @@ def do_run(run,trials):
             ITI_offset = globalClock.getTime()
             actual_ITI = ITI_offset-ITI_onset
             ITI_drift = actual_ITI-iti_for_trial
-            drift_list.loc[trial['Trial_num'],'ITI_drift'] = sum(ITI_drift)
+            drift_list.loc[trial['Trial_num'],'ITI_drift'] = float(ITI_drift)
 
         else:
             iti_for_trial = final_fixation_dur - (sum(drift_list['trial_drift'],drift_list['ITI_drift']))
