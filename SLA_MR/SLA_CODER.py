@@ -289,6 +289,8 @@ def do_run(run,trials):
 
             resp != event.getKeys(keyList = responseKeys)
 
+        cue_onset = globalClock.getTime()
+
         while timer.getTime() < trial_dur:
             # shareStim.draw()
             cue.draw()
@@ -299,7 +301,6 @@ def do_run(run,trials):
             certain_box.draw()
             certain_text.draw()
             win.flip()
-            cue_onset = globalClock.getTime()
             stim_duration = cue_onset - trial_onset
             resp = event.getKeys(keyList = responseKeys)
 
@@ -377,7 +378,7 @@ def do_run(run,trials):
         isi_for_trial = float(2-rt+given_ISI)
 
         ISI_onset=globalClock.getTime()
-        cue_duration = ISI_onset - stim_duration
+        cue_duration = ISI_onset - cue_onset
         cue_duration_drift = cue_duration - 2
         trials.addData('ISI_onset', ISI_onset)
         trials.addData('cue_duration',cue_duration)
@@ -412,7 +413,7 @@ def do_run(run,trials):
         trials.addData('outcome_duration', outcome_dur)
         trials.addData('outcome_drift',outcome_drift)
         trials.addData('outcome_offset', outcome_offset)
-        trials.addData('duration', outcome_offset-trial_onset)
+        trials.addData('trial_duration', outcome_offset-trial_onset)
 
         drift_list.loc[trial['Trial_num'],'trial_drift'] = float(ISI_drift) + float(cue_duration_drift) + float(stim_duration_drift) + float(outcome_drift)
 
@@ -440,11 +441,15 @@ def do_run(run,trials):
 
         else:
             iti_for_trial = final_fixation_dur - (sum(drift_list['trial_drift'],drift_list['ITI_drift']))
+            fixation.draw()
+            win.flip()
+            # core.wait(.5)
+            core.wait(iti_for_trial)
+            ITI_offset = globalClock.getTime()
+            actual_ITI = ITI_offset-ITI_onset
+            ITI_drift = actual_ITI-iti_for_trial
+            drift_list.loc[trial['Trial_num'],'ITI_drift'] = float(ITI_drift)
 
-        fixation.draw()
-        win.flip()
-        # core.wait(.5)
-        core.wait(iti_for_trial)
         trials.addData('ITI_onset', ITI_onset)
         trials.addData('ITI_offset', ITI_offset)
         trials.addData('expected_ITI',iti_for_trial)
@@ -458,10 +463,6 @@ def do_run(run,trials):
             event.waitKeys(keyList=('space'))
         else:
             core.wait(.01)
-
-
-
-
 
     # Final Fixation screen after trials completed
     timer.reset()
