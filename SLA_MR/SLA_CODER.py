@@ -312,8 +312,6 @@ def do_run(run,trials):
                     core.quit()
                 resp_val = int(resp[0])
 
-                resp_onset = globalClock.getTime()
-                rt = resp_onset - cue_onset
                 #answer = 1
                 if resp_val == 1:
                     top_text.setColor('darkorange')
@@ -336,6 +334,8 @@ def do_run(run,trials):
                 certain_text.draw()
                 cue.draw()
                 win.flip()
+                resp_onset = globalClock.getTime()
+                rt = resp_onset - cue_onset
                 core.wait(.5)
                 break
             else:
@@ -356,7 +356,6 @@ def do_run(run,trials):
         trials.addData('stim_duration',stim_duration)
         stim_duration_drift = stim_duration - 2
         trials.addData('stim_dur_drift',stim_duration_drift)
-        #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
 
         #reset rating number and amount
@@ -370,13 +369,6 @@ def do_run(run,trials):
         #break
         #ISI
         #logging.log(level=logging.DATA, msg='ISI') #send fixation log event
-        ISI_onset=globalClock.getTime()
-        cue_duration = ISI_onset - stim_duration
-        cue_duration_drift = cue_duration - 2
-        trials.addData('ISI_onset', ISI_onset)
-        trials.addData('cue_duration',cue_duration)
-        trials.addData('cue_dur_drift', cue_duration_drift)
-
         timer.reset()
         # isi_for_trial = float(trial['ISI_s'])
 
@@ -384,37 +376,45 @@ def do_run(run,trials):
         given_ISI = float(trial['ISI'])
         isi_for_trial = float(2-rt+given_ISI)
 
+        ISI_onset=globalClock.getTime()
+        cue_duration = ISI_onset - stim_duration
+        cue_duration_drift = cue_duration - 2
+        trials.addData('ISI_onset', ISI_onset)
+        trials.addData('cue_duration',cue_duration)
+        trials.addData('cue_dur_drift', cue_duration_drift)
+
         fixation.draw()
         win.flip()
         core.wait(isi_for_trial) # + wait_dur) - globalClock.getTime()) ##test #(2-reaction_time)+(ISI_s)
+
         ISI_offset = globalClock.getTime()
+        actual_ISI = ISI_offset-ISI_onset
+        ISI_drift = actual_ISI-isi_for_trial
+
         trials.addData('ISI_offset', ISI_offset)
         trials.addData('expected_ISI',isi_for_trial)
-        actual_ISI = ISI_offset-ISI_onset
         trials.addData('actual_ISI', actual_ISI)
-        ISI_drift = actual_ISI-isi_for_trial
         trials.addData('ISI_drift', ISI_drift)
 
 
         #outcome phase
         # if len(resp) > 0:
-        outcome_onset = globalClock.getTime()
-        trials.addData('outcome_onset', outcome_onset)
         timer.reset()
         outcomeMsg.draw()
         win.flip()
+        outcome_onset = globalClock.getTime()
         core.wait(1)
         outcome_offset = globalClock.getTime()
         outcome_dur = outcome_offset - outcome_onset
         outcome_drift = outcome_dur - 1
+
+        trials.addData('outcome_onset', outcome_onset)
         trials.addData('outcome_duration', outcome_dur)
         trials.addData('outcome_drift',outcome_drift)
         trials.addData('outcome_offset', outcome_offset)
         trials.addData('duration', outcome_offset-trial_onset)
-        drift_list.loc[trial['Trial_num'],'trial_drift'] = float(ISI_drift) + float(cue_duration_drift) + float(stim_duration_drift) + float(outcome_drift)
 
-        #print(trial['Trial_num'])
-        #print(type(trial['Trial_num']))
+        drift_list.loc[trial['Trial_num'],'trial_drift'] = float(ISI_drift) + float(cue_duration_drift) + float(stim_duration_drift) + float(outcome_drift)
 
 
         #ITI
