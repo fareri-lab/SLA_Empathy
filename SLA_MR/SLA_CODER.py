@@ -300,7 +300,7 @@ def do_run(run,trials):
             certain_text.draw()
             win.flip()
             cue_onset = globalClock.getTime()
-            stim_presentation = cue_onset - trial_onset
+            stim_duration = cue_onset - trial_onset
             resp = event.getKeys(keyList = responseKeys)
 
             if len(resp) > 0:
@@ -311,8 +311,9 @@ def do_run(run,trials):
                     win.close()
                     core.quit()
                 resp_val = int(resp[0])
+
                 resp_onset = globalClock.getTime()
-                rt = resp_onset - trial_onset
+                rt = resp_onset - cue_onset
                 #answer = 1
                 if resp_val == 1:
                     top_text.setColor('darkorange')
@@ -347,13 +348,13 @@ def do_run(run,trials):
 
                 # break
 
-        trials.addData('onset', trial_onset)
+        trials.addData('trial_onset', trial_onset)
         trials.addData('bpress', resp_val)
         trials.addData('cue_onset', cue_onset)
         #trials.addData('resp', response)
         trials.addData('resp_onset', resp_onset)
-        trials.addData('stim_duration',stim_presentation)
-        stim_duration_drift = stim_presentation - 2
+        trials.addData('stim_duration',stim_duration)
+        stim_duration_drift = stim_duration - 2
         trials.addData('stim_dur_drift',stim_duration_drift)
         #trials.addData('highlow', highlow)
         trials.addData('rt', rt)
@@ -370,7 +371,7 @@ def do_run(run,trials):
         #ISI
         #logging.log(level=logging.DATA, msg='ISI') #send fixation log event
         ISI_onset=globalClock.getTime()
-        cue_duration = ISI_onset - stim_presentation
+        cue_duration = ISI_onset - stim_duration
         cue_duration_drift = cue_duration - 2
         trials.addData('ISI_onset', ISI_onset)
         trials.addData('cue_duration',cue_duration)
