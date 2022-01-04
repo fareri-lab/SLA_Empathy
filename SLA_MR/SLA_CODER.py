@@ -337,7 +337,7 @@ def do_run(run,trials):
                 win.flip()
                 resp_onset = globalClock.getTime()
                 rt = resp_onset - cue_onset
-                core.wait(.5)
+                core.wait(.1)
                 break
             else:
                 resp_val = 999
@@ -427,6 +427,8 @@ def do_run(run,trials):
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
             test_print = 'last trial of block'
             iti_for_trial = float(final_fixation_dur - (pd.to_numeric(drift_list['trial_drift'])+pd.to_numeric(drift_list['ITI_drift'])))
+            #try sum of one series plus sum of the other series
+
             #iti_for_trial = sum(ISI_list['drift'])
             # core.wait(10)
             # this should instead be a long fixation minus the sum of ISI_drift
