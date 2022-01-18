@@ -346,6 +346,7 @@ def do_run(run,trials):
                 resp_onset = globalClock.getTime()
                 #highlow = 999
                 rt = 0
+                core.wait(.1)
 
                 # break
 
@@ -375,7 +376,7 @@ def do_run(run,trials):
 
         #next two lines account for rt of decision and adds to the ISI
         given_ISI = float(trial['ISI'])
-        isi_for_trial = float(2-rt+given_ISI)
+        isi_for_trial = float(given_ISI+(2-rt+0.1))
 
         ISI_onset=globalClock.getTime()
         cue_duration = ISI_onset - cue_onset
@@ -422,11 +423,9 @@ def do_run(run,trials):
         #logging.log(level=logging.DATA, msg='ITI') #send fixation log event
         timer.reset()
 
-        ITI_onset = globalClock.getTime()
-
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
             test_print = 'last trial of block'
-            iti_for_trial = float(final_fixation_dur - (pd.to_numeric(drift_list['trial_drift'])+pd.to_numeric(drift_list['ITI_drift'])))
+            iti_for_trial = float(final_fixation_dur - (sum(drift_list['trial_drift']))+(sum(drift_list['ITI_drift'])))
             #try sum of one series plus sum of the other series
 
             #iti_for_trial = sum(ISI_list['drift'])
@@ -435,6 +434,7 @@ def do_run(run,trials):
             # iti_for_trial = final_fixation_dur - (sum(drift_list['trial_drift']) + (sum(drift_list['ITI_drift'])))
             fixation.draw()
             win.flip()
+            ITI_onset = globalClock.getTime()
             # core.wait(.5)
             core.wait(iti_for_trial)
             ITI_offset = globalClock.getTime()
@@ -447,6 +447,7 @@ def do_run(run,trials):
             iti_for_trial = float(trial['ITI'])
             fixation.draw()
             win.flip()
+            ITI_onset = globalClock.getTime()
             # core.wait(.5)
             core.wait(iti_for_trial)
             ITI_offset = globalClock.getTime()
