@@ -463,26 +463,33 @@ def do_run(run,trials):
         trials.addData('actual_ITI', actual_ITI)
         trials.addData('ITI_drift', ITI_drift)
 
+        if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
+            block_msg.draw()
+            win.flip()
+            # core.wait(10)
+            event.waitKeys(keyList=('space'))
+        else:
+            core.wait(.01)
 
-        block_msg.draw()
-        win.flip()
-        # core.wait(10)
-        event.waitKeys(keyList=('space'))
+#        block_msg.draw()
+#        win.flip()
+#         core.wait(10)
+#        event.waitKeys(keyList=('space'))
 
 
     # Final Fixation screen after trials completed
-'''
-    timer.reset()
-    finalITI_onset = globalClock.getTime()
-    fixation.draw()
-    win.flip()
-    core.wait(sum(drift_list['total_drift'])+0.02)
+
+    #timer.reset()
+    #finalITI_onset = globalClock.getTime()
+    #fixation.draw()
+    #win.flip()
+    #core.wait(sum(drift_list['total_drift'])+0.02)
     #core.wait(sum(ISI_drift))
-    finalITI_offset = globalClock.getTime()
-    print(globalClock.getTime())
-    trials.addData('finalITI_onset', finalITI_onset)
-    trials.addData('finalITI_offset', finalITI_offset)
-'''
+    #finalITI_offset = globalClock.getTime()
+    #print(globalClock.getTime())
+    #trials.addData('finalITI_onset', finalITI_onset)
+    #trials.addData('finalITI_offset', finalITI_offset)
+
 
     os.chdir(subjdir)
     trials.saveAsWideText(fileName)
