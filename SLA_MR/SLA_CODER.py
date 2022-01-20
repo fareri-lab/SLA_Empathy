@@ -344,8 +344,9 @@ def do_run(run,trials):
                 outcomeMsg.setText(outcome_map[999])
                 #response = 999
                 resp_onset = globalClock.getTime()
+                rt = resp_onset - cue_onset
                 #highlow = 999
-                rt = 0
+                #rt = 0
                 core.wait(.1)
 
                 # break
