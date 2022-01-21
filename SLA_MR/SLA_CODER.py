@@ -427,6 +427,8 @@ def do_run(run,trials):
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
             test_print = 'last trial of block'
             iti_for_trial = float(final_fixation_dur - (sum(drift_list['trial_drift']))+(sum(drift_list['ITI_drift'])))
+            print(iti_for_trial)
+            print(type(iti_for_trial))
             #try sum of one series plus sum of the other series
 
             #iti_for_trial = sum(ISI_list['drift'])
@@ -441,6 +443,8 @@ def do_run(run,trials):
             ITI_offset = globalClock.getTime()
             actual_ITI = ITI_offset-ITI_onset
             ITI_drift = actual_ITI-iti_for_trial
+            print(ITI_drift)
+            print(type(ITI_drift))
             drift_list.loc[trial['Trial_num'],'ITI_drift'] = float(ITI_drift)
 
         else:
@@ -454,15 +458,17 @@ def do_run(run,trials):
             ITI_offset = globalClock.getTime()
             actual_ITI = ITI_offset-ITI_onset
             ITI_drift = actual_ITI-iti_for_trial
+            print(ITI_drift)
+            print(type(ITI_drift))
             drift_list.loc[trial['Trial_num'],'ITI_drift'] = float(ITI_drift)
 
 
         trials.addData('ITI_onset', ITI_onset)
         trials.addData('test_print',test_print)
         trials.addData('ITI_offset', ITI_offset)
-        trials.addData('expected_ITI',iti_for_trial)
+        trials.addData('expected_ITI', float(iti_for_trial))
         trials.addData('actual_ITI', actual_ITI)
-        trials.addData('ITI_drift', ITI_drift)
+        trials.addData('ITI_drift', float(ITI_drift))
 
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
             block_msg.draw()
