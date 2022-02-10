@@ -33,7 +33,7 @@ outcome_dur=1
 trial_dur = 4
 decision_dur=2
 
-responseKeys=('1','5','6','z')
+responseKeys=('1','6','z')
 
 #get subjID
 if DEBUG:
@@ -330,6 +330,10 @@ def do_run(run,trials):
                 resp_val = int(resp[0])
 
                 #answer = 1
+                # if resp_val == 5:
+                #
+                #     continue
+
                 if resp_val == 6:
                     top_text.setColor('darkorange')
                     bottom_text.setColor('darkorange')
@@ -532,9 +536,9 @@ if len (version)==1:
         # do_run(trials_run_friend)
     #     do_run(1, trials_run2)
     # elif run == 3:
-    #
+    #z
     #     do_run(2, trials_run3)
-    # elif run == 4:
+    # elif run == 4:zz
     #     do_run(3, trials_run4)
     # elif run == 5:
     #     do_run(4, trials_run5)
