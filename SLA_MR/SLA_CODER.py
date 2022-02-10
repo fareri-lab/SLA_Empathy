@@ -33,7 +33,7 @@ outcome_dur=1
 trial_dur = 4
 decision_dur=2
 
-responseKeys=('1','2','z')
+responseKeys=('1','5','6','z')
 
 #get subjID
 if DEBUG:
@@ -140,9 +140,11 @@ outcome_map = {
 #
 # }
 # instruction screen #
-instruct_screen = visual.TextStim(win, text='In this experiment, you are going to make a series of monetary decisions. \n\nYou will have $24 to start with in this experiment.\n\n  You will have the opportunity to add to this amount based on your decisions.  Press the spacebar to continue.', pos = (0,1), wrapWidth=20, height = 1.2)
-instruct_screen2 = visual.TextStim(win, text='On all trials of the experiment, you will be deciding between: \n\n(1) a  50% monetary gamble\n\n OR:\n\n(2) an 100% (i.e. guaranteed) monetary option.\n\n\nOn most trials, you will be presented with a choice between a 50% chance of winning or losing money and a 100% chance of gaining nothing ($0). \n\n\nOn some trials, the choice will be between a 50% chance of gaining money or gaining $0 and a 100% chance of gaining a different monetary amount.  \n\n\nPress the space bar to continue.', pos = (0,1), wrapWidth=20, height = 0.7)
-instruct_screen3 = visual.TextStim(win, text='You will be making three sets of choices throughout the course of the experiment, with a different allotment of $24 each time.  \n\n Some of your choices will affect only you, others will affect someone else.\n\n You will press the ‘1’ key to choose the gamble or the ‘2’ key to choose the guaranteed option, given the amounts shown. Press the spacebar to begin', pos = (0,1),wrapWidth=20, height = 1.2)
+instruct_screen = visual.TextStim(win, text='In this experiment, you are going to make a series of monetary decisions. \n\nYou will have $24 to start with in this experiment.\n\n  You will have the opportunity to add to this amount based on your decisions.', pos = (0,1), wrapWidth=20, height = 1.2)
+instruct_screen2 = visual.TextStim(win, text='On all trials of the experiment, you will be deciding between: \n\n(1) a  50% monetary gamble\n\n OR:\n\n(2) an 100% (i.e. guaranteed) monetary option.',pos = (0,1), wrapWidth=20,height=1.2)
+instruct_screen3 = visual.TextStim(win, text = 'On most trials, you will be presented with a choice between a 50% chance of winning or losing money and a 100% chance of gaining nothing ($0). \n\nOn some trials, the choice will be between a 50% chance of gaining money or gaining $0 and a 100% chance of gaining a different monetary amount.\n\n Please indicate on each trial whether you accept the gamble or prefer the guarnteed option.' , pos = (0,1), wrapWidth=25, height = 1.2)
+instruct_screen4 = visual.TextStim(win, text='Press with your left index finger to choose the option on the left side of the screen.\n\n Press with your right index finger to choose the option on the right side of the screen.', pos = (0,1),wrapWidth=20, height = 1.2)
+#instruct_screen3 = visual.TextStim(win, text='You will be making three sets of choices throughout the course of the experiment, with a different allotment of $24 each time.  \n\n Some of your choices will affect only you, others will affect someone else.\n\n You will press the ‘1’ key to choose the gamble or the ‘2’ key to choose the guaranteed option, given the amounts shown. Press the spacebar to begin', pos = (0,1),wrapWidth=20, height = 1.2)
 condition_screen = visual.TextStim(win,pos = (0,1), wrapWidth=20, height = 0.7)
 
 
@@ -200,6 +202,10 @@ if not DEBUG:
     win.flip()
     event.waitKeys(keyList=('space'))
 
+    instruct_screen4.draw()
+    win.flip()
+    event.waitKeys(keyList=('space'))
+
 # main task loop
 def do_run(run,trials):
     resp = []
@@ -207,30 +213,40 @@ def do_run(run,trials):
 
     #wait for trigger from scanner (= key press)
 
-    ready_screen.draw()
-    win.flip()
-    event.waitKeys(keyList=('space')) ## insert fmri signal
+#    ready_screen.draw()
+#    win.flip()
+#    event.waitKeys(keyList=('space')) ## insert fmri signal
 
     globalClock.reset()
     studyStart = globalClock.getTime()
     condition_screen.setText('')
     if  trials == trials_run_self:
         # condition_screen.setText('For the next part of the task, you will be making choices for someone else. \n\n\n For the following task, suppose that %s is in desperate need of money to pay off his/her credit card bills. \n\n\n You will have $24 to use in this task. \n\n You will have the opportunity to add to this amount based on your decisions. The outcomes of each of your decisions will affect %s. Press ‘space’ to continue.' % (friend_id, friend_id))
-        condition_screen.setText('For the first part of the task, you will be making decisions for yourself. \n\n\n You will have $24 to use in this task. \n\n You will have the opportunity to add to this amount based on your decisions. The outcomes of each of your decisions will affect only you. Press ‘space’ to continue.')
+        condition_screen.setText('For the first round of the task, please consider your choices carefully. \n\n\n Remember, you will have $24 to use in this task. \n\n You will have the opportunity to add to this amount based on your decisions, but you could also lose some of your money. Please wait for the task to begin and remember to keep your head still.')
         condition_screen.draw()
         win.flip()
         event.waitKeys(keyList=('space'))
+        ready_screen.draw()
+        win.flip()
+        event.waitKeys(keyList=('5'))
+
     elif trials == trials_run_friend:
-        condition_screen.setText('For the next part of the task, you will be making choices for someone else. \n\n\n For the following task, suppose that %s is in desperate need of money to pay off his/her credit card bills. \n\n\n You will have $24 to use in this task. \n\n You will have the opportunity to add to this amount based on your decisions. The outcomes of each of your decisions will affect %s. Press ‘space’ to continue.' % (friend_id, friend_id))
+        condition_screen.setText('For the next round of the task, you will be making choices for %s. \n\n\n You still have $24 to use in the experiment, but this time, the outcomes affect only %s, and not you. Please wait for the next round to begin.' % (friend_id, friend_id))
         condition_screen.draw()
         win.flip()
         event.waitKeys(keyList=('space'))
+        ready_screen.draw()
+        win.flip()
+        event.waitKeys(keyList=('5'))
 
     elif trials == trials_run_other:
-        condition_screen.setText('For the next part of the task, you will be making choices for someone else. Suppose that %s is in desperate need of money to pay off his/her credit card bills. \n\n\n In the following task, you will be making choices for %s. \n\n\n You will have $24 to use in this task. \n\n You will have the opportunity to add to this amount based on your decisions. The outcomes of each of your decisions will affect %s. Press ‘space’ to continue.' % (other_id, other_id, other_id))
+        condition_screen.setText('For the next round of the task, you will be making choices for %s. \n\n\n You still have $24 to use in the experiment, but this time, the outcomes affect only %s, and not you. Please wait for the next round to begin.' % (other_id, other_id,))
         condition_screen.draw()
         win.flip()
         event.waitKeys(keyList=('space'))
+        ready_screen.draw()
+        win.flip()
+        event.waitKeys(keyList=('5'))
 
     # Initial Fixation screen
     fixation.draw()
@@ -314,14 +330,14 @@ def do_run(run,trials):
                 resp_val = int(resp[0])
 
                 #answer = 1
-                if resp_val == 1:
+                if resp_val == 6:
                     top_text.setColor('darkorange')
                     bottom_text.setColor('darkorange')
                     #response = gamble_outcome
                     outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
                     gamble_outcome = trial['task_gamble_amount']
 
-                elif resp_val == 2:
+                elif resp_val == 1:
                     certain_text.setColor('darkorange')
                     #response = trial['alt_certain']
                     outcomeMsg.setText(outcome_map[2] % (certain_amount))
@@ -426,7 +442,8 @@ def do_run(run,trials):
 
         if trial['Trial_num'] == '32' or trial['Trial_num'] == '64' or trial['Trial_num'] == '96':
             test_print = 'last trial of block'
-            iti_for_trial = float(final_fixation_dur - (sum(drift_list['trial_drift']))+(sum(drift_list['ITI_drift'])))
+            #iti_for_trial = float(final_fixation_dur - (sum(drift_list['trial_drift']))+(sum(drift_list['ITI_drift'])))
+            iti_for_trial = float(trial['ITI']) + 4
             print(iti_for_trial)
             print(type(iti_for_trial))
             #try sum of one series plus sum of the other series
@@ -474,7 +491,7 @@ def do_run(run,trials):
             block_msg.draw()
             win.flip()
             # core.wait(10)
-            event.waitKeys(keyList=('space'))
+            event.waitKeys(keyList=('5'))
         else:
             core.wait(.01)
 
