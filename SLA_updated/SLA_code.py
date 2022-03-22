@@ -223,7 +223,9 @@ cond_ver2 = ['Self','Other', 'Friend']
 # trials_run = ''
 
 if session == 'new':
+   return_trial = 0
    start = 0
+   block = 0
    # for i in range(0,len(run)): #for each run
    if version == '1':
        use_version = ver1
@@ -477,8 +479,11 @@ for i in range(start,len(run)):
                        top_text.setColor('darkorange')
                        bottom_text.setColor('darkorange')
                        #response = gamble_outcome
-                       outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
-                       # gamble_outcome = trial['task_gamble_amount']
+                       if gamble_outcome == 'lost':
+                           outcomeMsg.setText(outcome_map[1] % (gamble_outcome, '-' + gamble_amount))
+                       else:
+                           outcomeMsg.setText(outcome_map[1] % (gamble_outcome,gamble_amount))
+
 
                    elif resp_val == 1:
                        certain_text.setColor('darkorange')
